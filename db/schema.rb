@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091230044012) do
+ActiveRecord::Schema.define(:version => 20091230064418) do
 
   create_table "captions", :force => true do |t|
     t.string   "headline"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20091230044012) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.binary   "picture_data",    :limit => 1048576
   end
 
   create_table "sessions", :force => true do |t|

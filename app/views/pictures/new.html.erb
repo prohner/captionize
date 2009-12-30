@@ -1,22 +1,26 @@
 <h1>New picture</h1>
 
-<% form_for(@picture) do |f| %>
+<%= error_messages_for("picture") %>
+
+<% form_for(@picture,
+				:url => { :action => 'add_new_picture' },
+				:html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :headline %><br />
+    <%= f.label "Picture to upload" %><br />
+    <%= f.file_field :picture_data %>
+  </p>
+  <p>
+    <%= f.label "Initial headline" %><br />
     <%= f.text_field :headline %>
   </p>
   <p>
-    <%= f.label :path_to_picture %><br />
-    <%= f.text_field :path_to_picture %>
-  </p>
-  <p>
     <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
+    <%= f.text_field :user_id, :value => session[:username] %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Add My Stunning Picture' %>
   </p>
 <% end %>
 

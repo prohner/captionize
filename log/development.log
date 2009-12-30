@@ -2939,3 +2939,181 @@ Rendered pictures/_caption (1.3ms)
 Rendered pictures/_caption (1.3ms)
 Rendered pictures/_picture (4.5ms)
 Completed in 78ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:41:43) [GET]
+  Parameters: {"id"=>"8", "u"=>"y"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(8, '2009-12-30 06:41:43', '2009-12-30 06:41:43', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 50ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/8?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:41:43) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (15.5ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.5ms)
+Rendered pictures/_picture (51.3ms)
+Completed in 72ms (View: 67, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:41:47) [GET]
+  Parameters: {"id"=>"1", "u"=>"n"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(1, '2009-12-30 06:41:47', '2009-12-30 06:41:47', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 50ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/1?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:41:47) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (16.2ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (3.9ms)
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:42:06) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:42:44) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 60ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:43:11) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:47:20) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:47:42) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:48:06) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:48:40) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePictures (20091230043017)
+Migrating to CreateUsers (20091230043149)
+Migrating to CreateSessions (20091230043245)
+Migrating to CreateCaptions (20091230043342)
+Migrating to CreateVotes (20091230043549)
+Migrating to AddTestData (20091230044012)
+Migrating to AddVotesCount (20091230060224)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091230060224')[0m
+Migrating to AddPictureDataToPictures (20091230064418)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "pictures" ADD "picture_data" blob(1048576)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091230064418')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("captions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pictures")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("votes")[0m
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:50:50) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:52:32) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+
+ActionView::TemplateError (undefined local variable or method `add_new_picture' for #<ActionView::Base:0x104383880>) on line #4 of app/views/pictures/new.html.erb:
+1: <h1>New picture</h1>
+2: 
+3: <% form_for(@picture,
+4: 				:url => { :action => add_new_picture },
+5: 				:html => { :multipart => true }) do |f| %>
+6:   <%= f.error_messages %>
+7: 
+
+    app/views/pictures/new.html.erb:4
+    app/controllers/pictures_controller.rb:65:in `new'
+
+Rendered rescues/_trace (86.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:52:51) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-29 22:54:18) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
