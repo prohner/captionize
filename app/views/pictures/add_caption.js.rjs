@@ -1,0 +1,8 @@
+page[:new_caption].value = ""
+#page[:add_caption].reset
+
+page.replace_html("caption_list", :partial => "caption", :collection => @captions)
+
+page[:current_caption].visual_effect :highlight,
+                                     :startcolor => "#f0f000",
+                                     :endcolor => "#c0c0c0"

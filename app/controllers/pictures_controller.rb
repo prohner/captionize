@@ -21,6 +21,28 @@ class PicturesController < ApplicationController
     end
   end
 
+  def add_caption
+    @current_caption = Caption.create(:headline => params[:new_caption],
+                                      :picture_id => params[:picture_id],
+                                      :user_id => session[:user_id])
+    @current_caption.save
+    @picture = Picture.find(params[:picture_id])
+    @captions = @picture.captions
+    
+    #redirect_to :action => 'picture', :id => params[:picture_id]
+    respond_to { |format| format.js }
+  end
+
+  def set_user_id
+    session[:user_id] = params[:id]
+    if "1" == session[:user_id] 
+      session[:username] = 'Preston'
+    else
+      session[:username] = 'Alexis'
+    end
+    redirect_to :action => 'index'
+  end
+
   # GET /pictures/new
   # GET /pictures/new.xml
   def new
