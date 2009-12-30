@@ -33,13 +33,27 @@ class PicturesController < ApplicationController
     respond_to { |format| format.js }
   end
 
-  def set_user_id
-    session[:user_id] = params[:id]
+  def caption_vote
+    if ! session[:user_id]
+      set_session_user_id(1)
+    end
+      
+    vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
+    vote.save
+    redirect_to :action => 'index'
+  end
+
+  def set_session_user_id(new_id)
+    session[:user_id] = new_id
     if "1" == session[:user_id] 
       session[:username] = 'Preston'
     else
       session[:username] = 'Alexis'
     end
+  end
+  
+  def force_user_id
+    set_session_user_id(params[:id])
     redirect_to :action => 'index'
   end
 

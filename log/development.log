@@ -2002,3 +2002,376 @@ Rendered pictures/_caption (0.7ms)
 Rendered pictures/_caption (0.6ms)
 Rendered pictures/_picture (3.1ms)
 Completed in 70ms (View: 64, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-29 21:35:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 1) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/pictures/1]
+
+
+Processing PicturesController#add_caption (for 127.0.0.1 at 2009-12-29 21:37:13) [POST]
+  Parameters: {"name"=>"add_caption", "new_caption"=>"Funny things do happen", "commit"=>"Suggest", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "username"=>"Preston", "picture_id"=>"1", "_"=>""}
+  [4;35;1mCaption Create (0.5ms)[0m   [0mINSERT INTO "captions" ("created_at", "updated_at", "headline", "user_id", "picture_id") VALUES('2009-12-30 05:37:13', '2009-12-30 05:37:13', 'Funny things do happen', 1, 1)[0m
+  [4;36;1mPicture Load (0.3ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 1) [0m
+Rendering pictures/add_caption
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (5.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Completed in 68ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/pictures/add_caption?name=add_caption]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:37:44) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (60.4ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 69ms (View: 64, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-29 21:37:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 2) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_add_caption_form (1.1ms)
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.7ms)
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures/2]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:38:22) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (11.5ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.6ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:40:44) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (61.9ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.6ms)
+Completed in 70ms (View: 66, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:06) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (12.9ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:25) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (59.2ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 68ms (View: 63, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:29) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.6ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:45) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (3.3ms)
+Completed in 68ms (View: 63, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:46) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.4ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:41:58) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.5ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:42:06) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.6ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.6ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:42:14) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.7ms)
+Rendered pictures/_picture (12.0ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.5ms)
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:42:22) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.5ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.5ms)
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:42:23) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.2ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.5ms)
+Completed in 19ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-29 21:47:49) [GET]
+
+SyntaxError (/Users/Preston Air/work/captionize/app/controllers/pictures_controller.rb:119: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (24.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:49:13) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (11.6ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.6ms)
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 21:49:44) [GET]
+  Parameters: {"id"=>"1", "u"=>"y"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(1, '2009-12-30 05:49:44', '2009-12-30 05:49:44', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 51ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/1?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 21:49:44) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (11.8ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.6ms)
+Completed in 70ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]

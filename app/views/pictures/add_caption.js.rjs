@@ -5,4 +5,4 @@ page.replace_html("caption_list", :partial => "caption", :collection => @caption
 
 page[:current_caption].visual_effect :highlight,
                                      :startcolor => "#f0f000",
-                                     :endcolor => "#c0c0c0"
+                                     :endcolor => "#f7f7f7"
