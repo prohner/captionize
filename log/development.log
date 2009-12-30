@@ -3192,3 +3192,20 @@ Rendered pictures/_caption (1.1ms)
 Rendered pictures/_caption (1.4ms)
 Rendered pictures/_picture (4.0ms)
 Completed in 74ms (View: 68, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-29 23:13:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 1) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures/1]
