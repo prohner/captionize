@@ -1,17 +1,39 @@
-<p>
-  <b>Headline:</b>
-  <%=h @picture.headline %>
-</p>
+<div class="picture_box">
 
-<p>
-  <b>Path to picture:</b>
-  <%=h @picture.path_to_picture %>
-</p>
+<div class="picture">
+	<table border=0>
+	<tr>
+	<td valign=top>
+	<%= image_tag @picture.path_to_picture, :width => 200, :height => 200, :style => 'vertical-align:text-top;' %>
+	</td>
+	<td valign=top>
+	<span class="picture_main_headline">
+		<%=h @picture.headline %>
+	</span>
+	<br />
 
-<p>
-  <b>User:</b>
-  <%=h @picture.user_id %>
-</p>
+	<span class="picture_info">
+		<span class="picture_user">
+			Shared by <%=h @picture.user.name %>
+		</span>
+		<span class="picture_detail_info">
+			<%=h did_when(@picture.created_at) %>
+		</span>
+	</span>
+	<%= render(:partial => "add_caption_form") %>
+	<div id="caption_list" class="caption_list">
+		<%= render(:partial => "caption", :collection => @picture.captions) %>
+	</div>
+	</td>
+	</tr>
+	</table>
+</div>
+
+
+
+
+</div>
+
 
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |

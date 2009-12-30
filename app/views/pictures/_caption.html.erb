@@ -1,0 +1,20 @@
+<div class="caption"
+<% if caption == @current_caption %>
+	id="current_caption"
+<% end %>
+>
+	<span class="caption_headline">
+		<%=h caption.headline %>
+	</span>
+
+	<span class="caption_user">
+		Suggested by <%=h caption.user.name %>
+	</span>
+	<span class="caption_detail_info">
+		<%=h did_when(caption.created_at) %>
+	</span>
+	
+	<%= link_to image_tag("up.png"), :action => 'caption_vote', :id => caption.id, :u => 'y' %>
+	<%= link_to image_tag("down.png"), :action => 'caption_vote', :id => caption.id, :u => 'n' %>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="picture_box">
+
+<div class="picture">
+	<table border=0>
+	<tr>
+	<td valign=top>
+	<%= link_to image_tag(picture.path_to_picture, :width => 100, :height => 100, :style => 'vertical-align:text-top;'), :action => :show, :id => picture.id %>
+	</td>
+	<td valign=top>
+	<span class="picture_main_headline">
+		<%=h picture.headline %>
+	</span>
+	<br />
+	<span class="picture_info">
+		<span class="picture_user">
+			Shared by <%=h picture.user.name %>
+		</span>
+		<span class="picture_detail_info">
+			<%=h did_when(picture.created_at) %>
+		</span>
+	</span>
+	<div class="caption_list">
+		<%= render(:partial => "caption", :collection => picture.captions) %>
+	</div>
+	</td>
+	</tr>
+	</table>
+</div>
+
+
+</div>
+

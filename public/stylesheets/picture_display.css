@@ -1,0 +1,51 @@
+.picture_box {
+	border-top: dotted 1px;
+	margin-top: 3px;
+	background-color: #f7f7f7;
+	margin: 3px; 
+	font-family: sans-serif;
+}
+
+.picture {
+	
+}
+
+.picture_info {
+	
+}
+
+.picture_user {
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.picture_detail_info {
+	font-style: italic;
+	color: #c0c0c0;
+	font-variant: small-caps;
+	font-size: 70%;
+}
+
+.picture_main_headline {
+	font-size: 120%;
+	white-space:nowrap;
+}
+
+.caption {
+	margin-bottom: 10px;
+} 
+
+.caption_headline {
+	font-weight: bold;
+} 
+
+.caption_user {
+	font-size: 80%;
+}
+
+.caption_detail_info {
+	font-style: italic;
+	color: #c0c0c0;
+	font-variant: small-caps;
+	font-size: 70%;
+}

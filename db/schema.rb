@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091230043549) do
+ActiveRecord::Schema.define(:version => 20091230044012) do
 
   create_table "captions", :force => true do |t|
     t.string   "headline"

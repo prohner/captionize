@@ -5,13 +5,24 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Pictures: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'picture_display' %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
 
 <%= yield %>
+
+<hr size=1>
+<%= link_to 'Main Page', :action => 'index' %>
+<hr size=1>
+<%= link_to 'Preston', :action => 'set_user_id', :id => 7 %>
+<br />
+<%= link_to 'Alexis', :action => 'set_user_id', :id => 8 %>
+
+<br />
+<%= link_to 'Add', :action => 'add_picture' %>
 
 </body>
 </html>
