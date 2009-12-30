@@ -15,6 +15,13 @@
 	</span>
 	
 	<%= link_to image_tag("up.png"), :action => 'caption_vote', :id => caption.id, :u => 'y' %>
+	<span class="caption_vote_count">
+	(<%=h caption.count_of_up_votes %>)
+	</span>
+	
 	<%= link_to image_tag("down.png"), :action => 'caption_vote', :id => caption.id, :u => 'n' %>
+	<span class="caption_vote_count">
+	(<%=h caption.count_of_down_votes %>)
+	</span>
 
 </div>

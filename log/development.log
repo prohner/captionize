@@ -2375,3 +2375,567 @@ Rendered pictures/_caption (0.6ms)
 Rendered pictures/_caption (0.6ms)
 Rendered pictures/_picture (2.6ms)
 Completed in 70ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:14:56) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (/Users/Preston Air/work/captionize/app/models/caption.rb:11: syntax error, unexpected kEND
+/Users/Preston Air/work/captionize/app/models/caption.rb:15: syntax error, unexpected $end, expecting kEND) on line #23 of app/views/pictures/_picture.html.erb:
+20: 		</span>
+21: 	</span>
+22: 	<div class="caption_list">
+23: 		<%= render(:partial => "caption", :collection => picture.captions) %>
+24: 	</div>
+25: 	</td>
+26: 	</tr>
+
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (101.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:15:41) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (1.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (13.3ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered pictures/_caption (0.6ms)
+Rendered pictures/_picture (2.7ms)
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:20) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (/Users/Preston Air/work/captionize/app/models/caption.rb:12: syntax error, unexpected kEND
+/Users/Preston Air/work/captionize/app/models/caption.rb:15: syntax error, unexpected $end, expecting kEND) on line #23 of app/views/pictures/_picture.html.erb:
+20: 		</span>
+21: 	</span>
+22: 	<div class="caption_list">
+23: 		<%= render(:partial => "caption", :collection => picture.captions) %>
+24: 	</div>
+25: 	</td>
+26: 	</tr>
+
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:39) [GET]
+  [4;36;1mPicture Load (2.7ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.6ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (69.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (86.3ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.1ms)
+Rendered pictures/_picture (3.7ms)
+Completed in 99ms (View: 90, DB: 4) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:16:44) [GET]
+  Parameters: {"id"=>"9", "u"=>"y"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(9, '2009-12-30 06:16:44', '2009-12-30 06:16:44', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 51ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/9?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:44) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.1ms)
+Rendered pictures/_picture (15.5ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (3.3ms)
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:16:45) [GET]
+  Parameters: {"id"=>"9", "u"=>"y"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(9, '2009-12-30 06:16:45', '2009-12-30 06:16:45', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 95ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/9?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:45) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (15.6ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (3.3ms)
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:16:46) [GET]
+  Parameters: {"id"=>"9", "u"=>"y"}
+  [4;35;1mVote Create (0.5ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(9, '2009-12-30 06:16:46', '2009-12-30 06:16:46', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 51ms (DB: 1) | 302 Found [http://0.0.0.0/pictures/caption_vote/9?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:46) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (8.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (75.6ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (3.4ms)
+Completed in 85ms (View: 79, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:16:53) [GET]
+  Parameters: {"id"=>"9", "u"=>"n"}
+  [4;35;1mVote Create (0.5ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(9, '2009-12-30 06:16:53', '2009-12-30 06:16:53', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 12ms (DB: 1) | 302 Found [http://0.0.0.0/pictures/caption_vote/9?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:16:53) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (5.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.5ms)
+Rendered pictures/_picture (19.2ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.0ms)
+Rendered pictures/_picture (3.9ms)
+Completed in 29ms (View: 23, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:18:20) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `count_of_up_votes' for #<Caption:0x1044bd930>) on line #18 of app/views/pictures/_caption.html.erb:
+15: 	</span>
+16: 	
+17: 	<%= link_to image_tag("up.png"), :action => 'caption_vote', :id => caption.id, :u => 'y' %>
+18: 	<%=h caption.count_of_up_votes %>
+19: 	
+20: 	<%= link_to image_tag("down.png"), :action => 'caption_vote', :id => caption.id, :u => 'n' %>
+21: 
+
+    app/views/pictures/_caption.html.erb:18
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:19:43) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.2ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (15.9ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.1ms)
+Rendered pictures/_picture (3.6ms)
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:19:47) [GET]
+  Parameters: {"id"=>"2", "u"=>"n"}
+  [4;36;1mVote Create (0.3ms)[0m   [0;1mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(2, '2009-12-30 06:19:47', '2009-12-30 06:19:47', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 47ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/2?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:19:47) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (51.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (62.1ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.1ms)
+Rendered pictures/_picture (3.6ms)
+Completed in 71ms (View: 66, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:19:56) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (5.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (16.9ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (0.9ms)
+Rendered pictures/_picture (3.5ms)
+Completed in 26ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:22:25) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #21 of app/views/pictures/_caption.html.erb:
+18: 	(<%=h caption.count_of_up_votes %>, :style => 'caption_vote_count')
+19: 	
+20: 	<%= link_to image_tag("down.png"), :action => 'caption_vote', :id => caption.id, :u => 'n' %>
+21: 	(<%=h caption.count_of_down_votes, :style => 'caption_vote_count' %>)
+22: 
+23: </div>
+
+    app/views/pictures/_caption.html.erb:21:in `h'
+    app/views/pictures/_caption.html.erb:21
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:23:24) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (5.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (18.4ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.0ms)
+Rendered pictures/_picture (3.5ms)
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:23:30) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.2ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (49.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.4ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.7ms)
+Rendered pictures/_picture (61.6ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.0ms)
+Rendered pictures/_picture (3.6ms)
+Completed in 71ms (View: 65, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:24:16) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (16.2ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.0ms)
+Rendered pictures/_picture (3.4ms)
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:24:26) [GET]
+  Parameters: {"id"=>"8", "u"=>"n"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(8, '2009-12-30 06:24:26', '2009-12-30 06:24:26', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 46ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/8?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:24:26) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (16.1ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.1ms)
+Rendered pictures/_picture (3.5ms)
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:24:27) [GET]
+  Parameters: {"id"=>"8", "u"=>"n"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(8, '2009-12-30 06:24:27', '2009-12-30 06:24:27', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/8?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:24:27) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (50.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.4ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.7ms)
+Rendered pictures/_picture (61.7ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.2ms)
+Rendered pictures/_picture (3.8ms)
+Completed in 71ms (View: 66, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:24:28) [GET]
+  Parameters: {"id"=>"8", "u"=>"n"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(8, '2009-12-30 06:24:28', '2009-12-30 06:24:28', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 54ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/8?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:24:28) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (15.7ms)
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (3.9ms)
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-29 22:24:29) [GET]
+  Parameters: {"id"=>"8", "u"=>"n"}
+  [4;35;1mVote Create (0.3ms)[0m   [0mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(8, '2009-12-30 06:24:29', '2009-12-30 06:24:29', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 104ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/8?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-29 22:24:29) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (4.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.5ms)
+Rendered pictures/_picture (16.4ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.5ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.2ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.3ms)
+Rendered pictures/_picture (4.5ms)
+Completed in 78ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/pictures]
