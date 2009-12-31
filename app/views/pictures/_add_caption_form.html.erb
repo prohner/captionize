@@ -1,6 +1,6 @@
 <div class="add_caption_form">
 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
-		<%= hidden_field_tag 'picture_id', @picture.id %>
+		<%= hidden_field_tag 'picture_id', picture.id %>
 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
 		

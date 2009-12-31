@@ -4,7 +4,8 @@
 	<table border=0>
 	<tr>
 	<td valign=top>
-	<%= image_tag @picture.path_to_picture, :width => 200, :height => 200, :style => 'vertical-align:text-top;' %>
+	<!--%= image_tag @picture.path_to_picture, :width => 200, :height => 200, :style => 'vertical-align:text-top;' %-->
+	<%= image_tag url_for(:action => 'picture', :id => @picture.id), :width => 200, :height => 200, :style => 'vertical-align:text-top;' %>
 	</td>
 	<td valign=top>
 	<span class="picture_main_headline">
@@ -20,7 +21,7 @@
 			<%=h did_when(@picture.created_at) %>
 		</span>
 	</span>
-	<%= render(:partial => "add_caption_form") %>
+	<%= render(:partial => "add_caption_form", :locals => { :picture => @picture } ) %>
 	<div id="caption_list" class="caption_list">
 		<%= render(:partial => "caption", :collection => @picture.captions) %>
 	</div>

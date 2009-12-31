@@ -3209,3 +3209,1345 @@ Rendered pictures/_caption (4.9ms)
   [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
 Rendered pictures/_caption (1.4ms)
 Completed in 23ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 05:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 05:08:00) [GET]
+  [4;35;1mPicture Load (0.5ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.4ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (5.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (70.1ms)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (4.3ms)
+Completed in 125ms (View: 119, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 05:08:01) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 11:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 12:59:06) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 15:07:03) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 16:27:13) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#add_new_picture (for 127.0.0.1 at 2009-12-30 20:06:21) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"picture_data"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-3jw4pp-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+ActionController::UnknownAction (No action responded to add_new_picture. Actions: add_caption, caption_vote, create, destroy, edit, force_user_id, index, new, set_session_user_id, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:08:54) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 141ms (View: 137, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:08:57) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:09:07) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"picture_data"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-hq3nx0-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+NoMethodError (private method `gsub' called for #<Tempfile:0x1043168e8>):
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:09:31) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:10:12) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:10:14) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"path_to_picture"=>"", "headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:10:38) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"path_to_picture"=>"", "headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:11:32) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"path_to_picture"=>"", "headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 42ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:11:36) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:11:37) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:11:45) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"picture_data"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-msrmwn-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+NoMethodError (private method `gsub' called for #<Tempfile:0x104375500>):
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:17:14) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"headline"=>"", "user_id"=>"Preston"}}
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 83ms (View: 27, DB: 0) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:17:17) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 1) [0m
+Rendered pictures/_caption (5.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.4ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 9) [0m
+Rendered pictures/_caption (1.6ms)
+Rendered pictures/_picture (163.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 2) [0m
+Rendered pictures/_caption (1.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 8) [0m
+Rendered pictures/_caption (1.4ms)
+Rendered pictures/_picture (4.2ms)
+Completed in 174ms (View: 167, DB: 3) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:17:20) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:17:31) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"picture_data"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-zyhb04-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+NoMethodError (private method `gsub' called for #<Tempfile:0x1042ace98>):
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:20:09) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 51ms (View: 47, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:20:14) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:20:21) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-1g4di25-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+NoMethodError (undefined method `name=' for #<Picture:0x10424a1d0>):
+  app/models/picture.rb:8:in `uploaded_picture='
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (86.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:22:36) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:22:43) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-jrqwuq-0>, "headline"=>"", "user_id"=>"Preston"}}
+
+NoMethodError (undefined method `name=' for #<Picture:0x1043a9fa8>):
+  app/models/picture.rb:9:in `uploaded_picture='
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (29.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:24:17) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:24:32) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-1xshoxs-0>, "headline"=>"fgdfg", "user_id"=>"Preston"}}
+
+NoMethodError (undefined method `name=' for #<Picture:0x10412d428>):
+  app/models/picture.rb:12:in `uploaded_picture='
+  app/controllers/pictures_controller.rb:83:in `new'
+  app/controllers/pictures_controller.rb:83:in `create'
+
+Rendered rescues/_trace (100.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePictures (20091230043017)
+Migrating to CreateUsers (20091230043149)
+Migrating to CreateSessions (20091230043245)
+Migrating to CreateCaptions (20091230043342)
+Migrating to CreateVotes (20091230043549)
+Migrating to AddTestData (20091230044012)
+Migrating to AddVotesCount (20091230060224)
+Migrating to AddPictureDataToPictures (20091230064418)
+Migrating to AddContentTypeToPictures (20091231042630)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "pictures" ADD "content_type" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091231042630')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("captions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pictures")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("votes")[0m
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:27:16) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 27ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:27:26) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-1gxtd16-0>, "headline"=>"fgdfg", "user_id"=>"Preston"}}
+  [4;35;1mPicture Create (0.4ms)[0m   [0mINSERT INTO "pictures" ("path_to_picture", "created_at", "picture_data", "content_type", "updated_at", "headline", "user_id") VALUES('svn.jpg', '2009-12-31 04:27:26', 'ÿØÿà%00JFIF%00%00H%00H%00%00ÿÛ%00C%00ÿÛ%00CÿÀ%00%00³%00—"%00ÿÄ%00%00%00%00%00%00%00%00%00%00%00%00%00	
+ÿÄ%00U%00%00
+	%00%00%00	!16s²Ñ9AQRYax“˜·"7Uu‘’¡±¶ÖØğSqÁÒ
+#$2Dbr&4‚¢ñáÿÄ%00%00%00%00%00%00%00%00%00%00%00%00%00ÿÄ%00?%00%00%00%00%00%00!1AQağ"q‘¡#2±áBrÑ3CST“ÁñRb’•–ÿÚ%00%00%00?%00ßØç*ey%00k³†ş6W¶‹K*6á7c¶Ìu“mi¨féŒ1¥¢F°öFR!•…~éh„–wîVj1¬ºq!(ÉrÁÚId…ÂDc!Ü9ä$!ÇŸo.Àø„=½+ ZOlâ_¿Wg?LcöuÃ’(Ÿ>@mâ|ë£Ïâ¢<¾?wJT<aø[€ˆxDv9ô±ÀÃû/Úùáˆáoğˆlséc¿´Êõ¥gúJ´Nóî³ä4ZŠMïX!åyÓ/Ü¹“Ç—©5DomDãoÈGŸVRvt@5Øn.ê¦ùïö—²ÚæŞêh®}S×rö°´æ.­Z~8’F×Å÷t~œ+÷¹÷vî7…6gµ–ÚâÒm}pØâ;©ÖÜKÇõKßÁ,‘.ƒÕ¯:×;xb8[ü"úXàoãíÿ%00†Ç>–8øû^~X¾¥b%25=%25Œm}X¾¶
+qã¸ß²u%25Òš£˜È³xÌình£8QÒÊ™Í“v³tÕšU¿mîA±jÕã¡ê‰È6Uã¸Ë~L¬óäåùÈÑÜ	—2F=e6İAã™''jLÎ\	Ñ„Ç/ÙöÚo.ûhb3­÷yR0t‡Ó—ÛêÌt²’QY ¬Á²%25Ú>êksqâPy"o#»‘«F¯swYj%00wW:‚•Á;Üxb8[ü"úXàoãíÿ%00†Ç>–8øû^yú«ÚTƒhéI:ëå³+ô›k.ß¹©Ñ''\¢l¹”INM\Š˜E’DL¦µŠ¢g(CˆxÀ¦)„?¿/s·ÛìÖZ}œVD›èeXnîAûÚÃ´ãÆÌ¸¥]NNòóÿ%00Ÿ¯FG„CcŸKü}£ÃÂßáØçÒÇkNŒl&ß%25ÁYTÍ¤ª•ëKÂ;*e9›÷ùªCtz@ CªÚiâ@`ÊtD;G^‡1p0gİ®QëŒ<€N¯@Æö»Gÿ%00ß¡ÿ%00ÜäÜ}¸»6§µ›Ômîå¸õ/QáI;Ì[¼ÔV$Š^''r& iÔÓ£­ø}şØrm§Ùc…¾Ò(={×ÄÑÃ$Ü	½NËNf’Xx|&Ç%00·ëÒ«“ÃÂßáØçÒÇhğÄp·øD69ô±ÀßÇÚe= ş„¾½ ş„¾½qş|‘ó®ş–·†#…¿Â!±Ï¥ş>Ñáˆáoğˆlséc¿´ÊzAı	}z:Aı	}zdwùòGÎ”µ¼1-ş},p7ñöG„CcŸKü}¦SÒèKëÑÒèKëÓ#¿Ï’>t¥®aø[ˆ€xDv9ô±ÀÁûoÚ›ğ~ş6W¹{KÚ6Ş÷c¶ÌåuŒsi’¨aüéŒ2]¢:°ÊF.!íı~—h›–iÒVr1Ôºío!/Égrı¢Jå×0ìíñøµå9ƒ@Ñ¥¥Jnˆ·u@|¿÷v(–cÛñƒ_—JUşC•BŠ<ÀtjÖ§ÈŒœ;w"<Ää óíåÚ·£JU½•NbUŸt{?Ü)è”W¥¯"‚qæ%25Ûò‡ş!–8“/ÎaÓrÊşK>ó
+z#¥Ã›Ùâ+òdááõ¯Ä“JSÅÒã§±lÁ¼li„''0”<İ§ÛnkÍ1–›JÂÕ+”r.9EZ¹î÷(NW¡,KÕ˜Qg%250‚F|z Ä)€@@ÇÌ%00yÿ%00x{—öës»Ûzÿ%00vvÅ–ÜÙœ]°yp$$M¶Ò¬ˆ¯2´3H¸§$ÖywzÃz¶%25şÀÚ|ac´%25˜ÛºÇ2˜."º‰ãwI2Mmï#s¯9ÅxFïR(š˜¶(@é¨‘‡ì}Ñ8F8y‡.Ş\»Ÿˆ5:3Ø²<+©|3¬åA¢­¡`,SàŠ ³#F½évhñ“]·j‹ngK<QTÍİ®z{ôwìQù’z´wìQù’zµ)Méã|n%00Ynìšrµ…Ñ*N­''ÚRÚFJyêˆaû=nu¹&¥¼Qê(X-í Påug•m9ls<½ãZ7ØGfÉ&Šx7òL©%00œÕúÁ”Té%25Ô™u1œÔ]ÊrñAåİù˜%00yr³í<4¸‚[Ù ÂWQ[·j÷»›Œ(ÁB¸LıK”¹\±‰Mnà1™€˜ÍÄíÙ¨µLGĞ¸Ûÿ%00bÌ“Õ£¸Ûÿ%00bÌ“Õ«Ó¦÷ÆáÒÃvÕÁÈeÙ×!³€3Ÿ_øüê÷û>î„‹¢M©¼®¤`«_Ú•#İÈÇ³ñÙô^êÔÏƒüõƒ3}¦ñ™©Í`‘qÂF²%25”"Íã÷ò&Xäl[t—4yS ‰Œ°çûOí¢‘@¥åÙÈ%00%00? rıƒşøD ó!_üHRşÎ_¯˜|Z¬|`iµo>òmìÛ;sjåÒÀ–ÈñÀ‹oo´b4w•”páVl»eË6@ 	Kt÷WgnvÅ·Ø{-®Òİç‘^åÒIÙ®''’âC#¤q+{ò°RpW¨Ô@LÄüÃşm%00ñr//îoÿ%00–ªĞøµ÷Z^/Ûé]-QÕ€ûEìø‡üÚùÕ€ûEüÃşmrhÕ9xyÇíô¥qõe÷ù‡üÚø%25ø€³Úl>1÷uË£N^qû})_ÅùGö¡ÇÄÃÖsyHS9÷Şk@?¨GS† İÈ}ç-Œ)¿U1Ï>{?¥*æÅG1êÌz]¿îôCF¨ÅK1ó	ú!£U¥_ÉgŞaODt¢xs{"üE~Lœ<>µø’i»e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¥)âê‘0Ÿä)è€ê­*+ˆ>={fîo|“<®ş¶ñO˜­ãÛÜå^çQ·''rgg¦=“‹¸Rc^ÃÏ7dÌÇYfÛÂ-ÜiSb&aU	ÀóßMtâüÂí.B%00<ù/!çª´ˆè– Ø?:GmÎ‚¦nîès®¯îZß•³=»o¸³
+:Úí\1ìıÒ•pZ6ÁvšÉ›­z¼ŞÙ,–!g7]JÙh†Šc\kÖ8âµšàáï³äÇX¿-°ÿ%00bÅ»\pçGeˆt„Î0Ëxç£U­d+Û6§Ü?“ŒÊpÖd²;¥TK>÷ìèuëJÚ»”ë>|òøUºÇnGÇàÇ´vvÓïÑ¤{»]ê¿Üb™cÃVª>fİU¿m´[}ß+8ñ*Æ7ÙëÇ¹Ìx¢:*ÖûªnîŒnX†ımÈ·Vš2KĞ-5–hÚÑ¥ñ=Üy1¶.É™6½¶
+ôFZÛ~õ²yßÊeJ5^‘ö‡•1î/g!t»½RìùL{”\Õ~fŠêéW“J«3¤f“v›íõóùUuù|;³ÿ%00PùÓğş¼Z§˜Ä>!şşB¹ş^ß×¤''dŞÖåòfÇXv"R»FqRâ)„°•Ìçe<|ï#ãŒ³kÎå#—Å–ì…¶¼DíyxYø™)éBÛa‰	,fÕsœ2ü{}Ş>ì­™W:m«ÃĞmŠ–û~©YµfÈóõ;¢˜ÛuRØKa¬háììd2©Í¹‰|{óçX,.Íİv­jhõE[ÒšÇïËùÿ%00LÓîè›İüÂ::''÷ß¬uø¢\»{ñûD˜½tÉ£—lzI$¹]²J®ÕÓE7É7XçE7‰¢’nˆB¸"I•@ v:yóÏãç­ÕÇÑ?¾ıc£¢}úÇ\š4çä~ÿ%00#š¸ú''÷ß¬uô%00Áã”GUèç§Ÿ<éF İÈ}ç-Œ)¿UNZƒw!÷œ´~0¥şıVt¥\x£Éf>a?D4hÅK1ó	ú!£JQ•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&›¶WòY÷˜SÑ(ŞÈ¿_“''­~$šR.¡ì¹€ñw%25 ™f“t.7»DäŠ''|ÜJ 5kì	$¾ Ñr1çm`†+‡=ê’éÄx¹pf†DË¬cÌ:4¥Cö,	‰-™b•œ¬T˜©\­«Ö:"èéY1”­Ö­ænkT$jIÈ''œm”ì£O<ÕF
+§,x˜s>Í-0‹7ğ§Ú…ïËÑqÖÆXşw¼*Tàf–‡³<c_Üª×>(nH›TT´7°)TfÖ6»[~Æ/I÷º‡b„p›=×Á`!îéÒ¨@=EiÕˆ"mëW²àóLä\Û–ğ2ùQy‘ó|Ns·Ñ¹Q2m“nq™›$Í¾ În²¡–¶ïK£„LÓjü$v] «&R—º,¦w''ráÏ4ÇâÏü•&˜ÈnwãŒ]P‹Ç³µF²n±íwpùj§R¶İs…cÊV²ì´m¡+|,«ÊÊ÷úÓ¨;¬Cª´`‹&É\6öû•.{¢¼Yd6“¬©â¨;wØõ¥8d¨Ö¬@úR¯–ñy\µ¼¦¼­IMX_e”»œ''Œ}»(g­dnöwcÊûxÌ·­Êe{½»o¶[å–=´gF×mJä
+XÊb.N*ŠÁHH„êàéãvõ‡±nk“‘véÃaaÂ¹ííÏÃ»¦9ø|:`×˜B9rÇ!Øy×Ÿiûyör«®¹w‡»ºNò%251>×?É{~¨å\v•r½Bãtªf=•ÁYÚDÚ³F1ŒÜ]G9CZ¡ºË:¥ÒË''P›ÌøÖ>N½“;Çh£µ°Èô›7ÆD®ƒ¦È>ˆ>}‚fJDcJõbkv™æR¹äL`Ä’ù{ìğ•³lûÇ×''WnñDîf$-rèöUÄK›‹L˜Ëü)ñl˜·Mİ²¾E55DÜ9«[ÏXÃ‡ÉTz–å+Vz=î¶Ot[½Ò«\£ÛækXÖ§eìUr’fUµ¢r£U}gLl·oø]äEv×Ÿòd5J!Õw~ê·''JJŒË?ÓÙÒñD>n±Í2¥ œ,%00_Öªå‰\p¼Ì})ÖOc!p+Fôæ³õÂºã©ú÷}ja»@ìêŸwoNg—å:í»ˆ>7Ï/ví†ó&-­ns	[3&˜¿ÃcØ¸Û[)t¸:}òÕ5L–‰¾Õß@£9ÊÅß%25á˜‘è&ò:¨å]ĞîÆù½GX;.Uğ¥glŠÁ¶\Q^šÆ0w–Y-QqÅçt»æW“C¯j¿3¦×*ØÚV—:”nNÖşÑ"îÇj`=½m«ÍìÍ­wxò–ö)ÇYoT
+Í|HÅåî-<¬@¹û3UYgÓ©™I¯ËTF‹äî×ÈIÈ¢«w83#î(áÍß_öô–Q½C2Ü©K’m1“âPŠÃÇÉtˆ›ı~Ã²4”^2£mµW<„—aM‰¶¼¬’R,mrş_§ûUA8ˆëØ@Ï»ÏGñ}1Rš\A«. nXâø¹(¹_m“2äz¡jñ­#t¹¸ƒÅÍÜ>µÇYf£’´e.^õ%00¥B»e¼W™KI"É•ºN±Úø½U	‚ÌUmºg¨Æ·¬º¥‡TÈ(bÈv«6ÕëVKF¤M#’­U‡£«32Ó²l»ge*„4ŠÎ–„$¿ê°m÷eÉNÌ(ËwMë˜Şå˜pşæ­8™\—,•ÛNnÁĞøóı^ä¹K-‘¤¾BsåÖ$Å÷Ë¼Bö¥!2‚‚•†]ÏpLä,q“”íwàl)½{,ıoDn{ÅÅ-+†a,y67wµ{-K GI>eId¹¤"àr¡iÒT¶°ærê2F`³EI0q_wÇ³åŸÏ9ğªeúdÌdó<û1Ÿk)[ñ
+^[c{>İ3‹''[öçOÜ…™İ p©èUœnòá\¢Ş­ò¶ìÇÚR\O!q•„jÒFmÍHÊq¬ü»±ÍñÓpœL^NbÌE3‡Éx>Ñ—g¶·™ğ¼Õê¦bsöØo»±ÛÖÉ''bÉi;cÚTƒªV{«ÙÆ&}…_ ÂB[j“lA''Í­qYyö&Ö¯•)™Ná›oùQz¶Øåöş©kªb˜ºÅ§ËÌÅM¸Re*.Q9²¼‹O¯c&ƒšwÅºìTå;H*ÅÂF…c«bú›¼ı›ËÔ±Î2Ào²Årr»ã<µ‰ó4=1º¯èJ¡ky+eÀøj½b¹ÛÉÚ_Ğh-ëÍŞ²‘²\,ôGÆ®÷ñÛôğíùÿ%00½6òˆ?|pü€s%00~`AûûÎZ?Rÿ%00~«:›‘!“L¥1„æ%00‘Ä¥(œÜ¾èâRr)zFæ=EçÑÀB;ûÎZ?Rÿ%00~«:¥_W(òY˜OÑ1G’Ì|Â~ˆhÒ”e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¦í•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&”§‹£F)F¤ş/Ëızû?şéJã:Ä''üÆ){y?wÜíöüZâîÖâ<bs÷=¿ÍÒÖn6É~Bé‹é´‰‰¬jÛİ¸•lİŠé¸<	ä›Á“¾%25à}"¹E©ßš´ƒõÉÿ%00C"ÂæÊı¶HRİ†BI£iUA­U­³~ÑFr½ä˜TÅX¨£"sœA>^Ü¤KGà$îÓ‚§¼6óOÊ$,qœ(''—.Ìsÿ%00šÃö+s‰^xË0\ôéìş‡Â›²’¬•GhS%00Ìè€—¥Ï´Ş.3s`%00&%00Ö7f,Xÿ%00#ÚëòŒkØjÉ_w›c|€ÎØo!d¤Szí´L…yúQË&Ñû©”\ÜsÂ÷ÉÊš?ˆ¹WKæNÀ‹¶r‹ÈnÂäŞ$æQ’QftôÆŸ»“¶W ˆw«‘Ñ|¡TDà\N¸„%00îÛÙœÅŠ0!ºkRB´dŠ-¢ÏÁë†h”ˆ?nªæZH‹4é¦éÓUªQës(),Œ\¡²ïÀ—>µaûfĞícÇo¾¾¼·>u()µK±,µYfXÃiŒÔÇ3íu™¸	Œ±OV5%25`äÖlş·Œ˜4‡ŒN©Ëw¤ÓO¢e\ÃÄ°;VÌtØ{y³\KÇÍíÌÚÑ‘o&e_©˜‘™-²8ÀÒY»³¿AÚ1õd$læ©åú1©1+¡m‘Ql×•m¹éöIÖÙLB;“(-™WØ¦İ%25°“fZ<Ã"“Ó¸”ìf¡Èºî
+]~¹+$A¥¡Sq¹+SY‡©L²ˆÑÒ“H€ŞJYHòD8$iUIËÅX¦~çbï«pb²[£§³/zp$øh~œ³õçÙÙÓ²Ñµìû$Oü—şÑ‘òÆy÷uÍdÕcn‹Á¯i;lwµˆvîèí¢+ËW+w†®b$4”sˆéò„“`R“6›¤\‹·‘Š¯M–%25€1nš­ĞQ6Å96‹ç8wg°©îÕq#OÈá$ƒ¡TÛ<Šfù»V¬rÂ·Ye,=Ege¬B™WN[4`Â3äîíâãír,·Eav¬:nL»•NílXE¤ıËI¹QnÈŒš:Jeé¤Aº©³r‚ÎÄ#zÕ¯•³Ôd$Å¶§šFÃS¨¯^ZUËºyh¹Ud$!cÚÖâ¦SQÂÆvŸBIf]côªnÜ—¨´KÎ[˜P¼‘º/!–R3Ó¦Hÿ%00Œö
+¾-§m+ˆÑ•Û=†îÉ8åÙÙ×ó"Iƒãøùˆº>ïíøõ^­
+LÏ«±²br‘~b~¬½.ˆ”Ç(ˆ@Â/DH"Q¿XU¶ ğƒw!÷œ´~0¥şıVu9jÜ‡ŞrÑøÂ—ûõYÒ«W(òY˜OÑ1G’Ì|Â~ˆhÒ”e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¦í•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&”§‹£F)F©7ü£ù?hj­Råÿ%00åúô¥aÆàÜ\Ÿ·ÕÌ±ÈTî7s•0ë@T˜ŞiA Šb	ªR šÇ*JóP¤T¡Í2ëVü£PÎWyuN•‰ÇÕÌG1”^Ã¼e‘.HÍ>g?’æ##ç^×¬<‹ªÂ>~ê¬yÆ‘öQH°Oœ³déY Úr+¨[ö
+HSYoçPLs šxÖlKÑ1Hb¨q_ª!’¦=bŸıĞ‘MYw#‡7[Î™jÇˆ·B¯ÕVgY¦dlc‘Ÿ;ˆ±M¸»	#ÅIRÒ†YóÖlq$ô1fY	$›ÏQ7U¯$×LD`ˆĞE©C+Ç0O2Ã¯*7Ï:	ÖuHü\v6Ø¤œ¨ÀÒsĞò87væ«X•fëcË¤âÓs²Çy îÉgFFHÀ#;Z/x	 NµvUD^;‡«VĞ¬ådÙ5zÊuHŠµ—"¢íÕR§`3ªtU*±	Ş÷É£ô2Go0Õ¬BÍVRÏ £öîO/Õ¤‰Jï `XĞpæŸ2Gœ4\y¦ˆ±K¾‡h‘Ÿ7’˜lÔàÊ&(6—“jCÀÕû¦ıRÇîù7Õæ	_œ‰²Yç`ƒ×±4ü]nÉ¯#¢]D/a
+µnq´3IAÂQÍæ\5ZM4W3&‹µHê„Ğ`³D÷á‰:ba%00 ©éü8í<ê)İ;IdqÚƒ''#š•Ãú¹`ayçöë‰¿_g1‰ÁÍ6¶ã,†òZ!´Ûº¾Üy–ÓÄ3GO¤Ö¡‚Q&;É>ŠZ,©¼)dì¹¸Ü»Cİe_c¬TÊô-6Ql{}­âJl}¬Õ‘™ÌM@_ãàß¾u&ş5ÔCºåQ¹Í[m£ »°Y´)áƒ&±múœxÌL¨(_±òã,uK–&”Ç6ç–8ºÜ©dip,±Î˜8™ƒnáF<âä.$ëœ.ÄİFNãz«õö®­L£Şåe>Ì­ÒbÙ³å¸¼!ŠbG¾UTˆWZ¨2f+t*ˆÿ%00Ç¯ÖaµœsÄ9>ı›q’Ğ¤Äi]JêªéRÂEäIJ\µ¼¤ßîL3<‹‰ZË0VF:X– o{N¥È5ŞÒRÇ×4«ò­±]ñ“eQK;9zÍ?¿fbÁC@Ø"ÅÈ7w:‘–¹öK½"‘]BdW»9&xârÕ™ìöÛ]˜XğÑVåcÜ°B@îUæ	–£Ô}Q‹A œT;µ›3cWdŸpÆ¢äì%00EÂ…Ö²IİFÕXF¿Á
+¤¬£&V5T|ÚÅ:rªc_E0nİÃ—32oÍ"£Ã¶‹]²ˆ¹rø’mIóÆ.¦µû9ŸB5då½•›x¢5™Mÿ%00}à›dØĞ›]R0nXÙ	ê9UHèíI6«É©İYC †;Ú8Õ~ğ%00B¨8÷O<vöõíñ®Ÿsæ–KÏ¼bÄ.ÉÇAÌt$uæ{r<)áã÷H½ªÄ;n[¤å¹V"aÔ‡"¼Ò0ƒp@ÇHHqÃ¢^`^cË˜ŞÚq`ØT1LŠí„©œ N¼†éÇë™ÎEc˜Çz?wÑè”Å1BFÔ%25S:~şQúQ¨7ryËGã
+_ïÕgS– İÈ}ç-Œ)¿U*ê¸ñG’Ì|Â~ˆhÑŠ<–cæôCF”£+ù,ûÌ)è”Ood_ˆ¯É“‡‡Ö¿M7l¯ä³ï0§¢:Q<9½‘~"¿&NZüI4¥<]4iJ5I¼_ŸÑUªMâüşˆéJ^›¶¸ÆTïØQüºæe”åğËºçÉªŠi¹QT@DtG¦¯WÈ†®1ú(	V-ÆïV¯NİNA¹å•8$ ¬Ô)æÖjì¤mÃ»ÍP&phÆ‚5êÌr¿dÏŒ´Û¯²~õ÷Jl]¢³æÍCcÎ#õâIºÅí»©ê-e&.¬Õ¡R:c"Àvò5AC ¡š‚ÌWIDN s@ªÏwl1ëã”İk<ä›j‚2‰³Y#IIešÙÌŠ—8ô	Ş´…ÓÃ˜½4ú¶¥M5©pãn,“DÑ‰•ûædˆ&‚rì¡œtşI=Â£M÷uEe•¢ÎO«ÇÄ›Y1…ŒQyƒül%00ÁêpFÆëî¯n\æìn‚` 2öF„1G£ÏîËÿ%001~ä9óä î±Â×¼ı¶ä»5ÏlõÛ)íŒ±V™ˆ¬JÔÚÈ»ªXÔ“¤.İñu‚P;[Mº…EWEdfîÇ¦„’?r)êò¦|-~ÈbQêÕJõ]ˆ³mÚ%25Vè"Í2‘uEEØª²‡|äŠ<\Æ9…C¬q8©ÙË#k™êŞú:nôÌk˜Ø«r‘9}z0–Zj¸£4/zÙ Á&òùDÊÃ?bø«Å)êAG®d4·å½Ö¸­om%25¸ImÆè.@`$KIdš4c ÊÅ$Ü„’ª¨p"é#¼²áO}³.ííeŠ·QÈ³]Iª6½‚(e–.CË;FŠ9Šê|9&ÏtN½‹o“Ù‡J7Â3³5©6–	¦Ô-û‚«²N§
+²Õ"œ1™¶€°‘ì£úÛË±•xÊQ¤á!¢fÚ)$ut»œ"B‡m«ÏÙjÙ•—‰ŞĞî«¼{ÀÈlãÜ<b›ÁzTeV›v›¸¡`¢ö&îÊHõ7C×-ÃæMÁÜXÑ7™ Ô™@9³Tc8âjRÖ–Q/;Ró
+uÊ.xöœ®³6g‡|—+‚˜ê0›ä±ü>–ÊLzª=.z­#á¡æ£ƒ$$jû$koÛÅ"Ö%25­n"mK	.B$!ÉNäw$İ\‹X¦¸34q´B9Ö	’fS"°1£¿»tú#T*úÔ´rÅ–CÅ“Ux\^ZÛğ–I¢˜Knn-¤‹X@Cº®dµBò3«FQÔKÄ#Zjyİşì¡äv±‘§0íå8ÛY¼sŒÌ‹gª9‹—¾×ÙH#[ƒz«fÓnªª±ë"áE<{¢™¦s%001½œnrfÑl	«íÍb…lÕôÂ­M²3Ëürè0îÆÈ"
+3f(¤ƒpU''2+ªùn¹úÊ­×£§>SÎq×k®¹F‹†©PdgÚX	O†…¨F¢­YÏ}!&Ñ‰³È¤’ËtQˆen
+<9l±ÂÄ½×µkkÓ³]>âJ<«U#¼Nß›y´N—X¢ÙÁŠôäGBš
+ ~¨ë•Bq[ó%25¬¶“ˆ[Š±ERÍİG#	Œ/ÑĞ†PŒß§5×î\w¦X¥¸FÚY¤D`f³‘a6ÆxÀÌr2BARO,Vî¸Èø‚*ŸVªdTª”B”T2ªœê«¬TÆ¦
+ˆ©Ğ1€Å0È:±‰’™GêgÅh‡v*™G&D©Õ(ª°•Q1„°Å€ô~ç–¤AU9''à_å_ĞQ¨7ryËGã
+_ïÕgS– İÈ}ç-Œ)¿U*ê¸ñG’Ì|Â~ˆhÑŠ<–cæôCF”£+ù,ûÌ)è”Ood_ˆ¯É“‡‡Ö¿M7l¯ä³ï0§¢:Q<9½‘~"¿&NZüI4¥<]4iJ5I¼_ŸÑUªOâü¿à?ş|^=)K}Ë(¤î*l‰C"ó ¹tDTš)æQ#T§/V± %00$Pz0r/L_8ıùÎ·‡ÌyÌüC×ì¤ˆÂ0‚İ°8Z9³ÑEp\ı&ò±‡Q7É¸néV b•UJ§£®ùãHêÁŠ*‘¡¿½°# Ìn±jcâ*Jfêˆ³YÂÆËÖ*dAçéˆ|ö7Ç·+ôõÊA„„½İÔë«Š¡bâZËJUcpxÍ¾m.¤’„î‡†téã†èªR®tØ¶Tàš!nl…#¼GÆ¢0xdÌ‘ûÊÌ¥”	å’9·@MG»Ú¨òÛ¬Ùá	µÊAu:R6‘pÑƒ†ÕäØBp£›%00Rºª•EtÀQ1Ä¤E%00˜%00 _¹)CÄ/a÷!Ø·¶?ä¬õ×)Ç:s	IY3ªf*4ƒ¬m&™\$!e	œÆPÄ2ı!IiíBÚòRYc¾¯.^V)ØKÓç»™5aÖE«ÕAÚ* û©C¢áD] C%25İ­›¬`L:›HÊ‘ïÛÃ¹„•zõã7ÏZ¦Ö³gfíd(Ù''}\zğäUr Ûªªé¨"EU”*Š¤CôpXİÁqì‘º†I†%25·([ZéWE•¥Pä`Œds­,ûNÂêÖhibfW³Øu<4‘ÈĞ¬,TJÂV9Á
+Ü³F\;¾õF%25‰k=fƒ—€xÚ1˜¿nŒ{7§u‚©w
+‰åê\¢ğæ#AM8:û#	G`œ­u´Š•IH×6&-’\#%00“ŠÚÃª‚&æiE»‰11Œ¢°î ß˜¼Ÿ‚^„Û6DI•Iåb}0ftÂQÊĞÒé5bxÔÃázàœŒÅ4ÖAC‘HÉ@Qb¦Ÿn§zf›h(Öòe&àjÛ•£§"ªõjÔô=†Á#]}0â¿>µ}ã(ÒIG­à0Y7ìÓi1©äâ&ëa3ÜEÍ(Œ•ÑîÈ¼}&F%25°„0pua%00@¬’æÒÖiM¼|`JD\a„H#I.4çV¡§2lBûˆpvÒˆ0Q6êÒMÕHŸ¦¡¹4ÈTİ¦c$é€L¢d 
+F\ÂäŠˆ”	­Ñ¸B¦±¶±M³å%00z–Àˆ¹Uª”^ß&b‹•2i$à†3Šr(°(è*¢±ÓP5©mXŒŞ¨şÊ¤‹eã$VïÀZÌ“(¥HŠ/NÙéB ÈÌÚ.“Î¬)"¢@nr“[[ğÅ¤…/l6™Û
+©«0¼H7ëÊA?rÙ#ß5™]vÇ$dÎLì_µo vƒÕ•¹{­¢‡ÑíË)-6LÆk›wi9¤QÍ’*êC‡á³%00rOSø”Êİì«îĞT†Òík¥¦–İá…İ±Î> VeA*İõ¸''PT£ÁÆPæîp)…Ezãtˆ}hóÃ‘ÀLc!%00érå%25j5Ää!(°%00N˜ÌÑS ¡z³§Ö$S‰L˜%00DL"nˆó1@ÀSˆŸ¥©+Q5JIøùGéF İÈ}ç-Œ)¿UNZƒw!÷œ´~0¥şıVt«ªãÅK1ó	ú!£F(òY˜OÑRŒ¯ä³ï0§¢:Q<9½‘~"¿&NZüI4İ²¿’Ï¼ÂˆéDğæöEøŠü™8x}kñ$Ò”ñthÑ¥(Õ&ñ^ßgøê­R±sØ†å“ÕœÑß@1™­¿\ªXB\­Š„õqõmÂ„MYòM›H8ué1L­Ÿ•³“uÀP¢ô6È®ñå"ñ–Ü f‡#ƒGEäD%25Ÿ
++¨«!$ºââip!Ô]e¤,ùWBLªª,ª¢ñD€>çå)Gü5GPOxŸÍÕ¬ˆn§·çåÍƒÒ°®,-î[2¢¶{uƒ¼øR%25Sey²m}‚`Tly!T˜-ÀU ”$$S®EÖæ5l¹SX¼Œs$n÷³Œœªnİ8¥`‚.%25(!“?:D#s•8ô’Q2®‘ÁUá5EHª%25D…Tà=…Ô''ÈC NÑæ<Ó €o1aÚ#îo.Í}HÌ
+@l@€ş.Î]œû¿·Y''kmósÿ%00¨ßÖ±FÄ°ÜÆzv¹åú
+HDÙÎOL«7J€TS«AÑ9´Êh"¡Ÿ¢Q@(~wX‰¿ãĞ@®Á™%00…éœà$×ä_j9¯jÜøÓ	wWsªw)•†±È™:´İòiÊ±ŠGHÀc”¼“HêˆW‘Õ—.Eåÿ%00»ãìçË·ÛìíöûuOs¤Õ§Ì¢QÈÌÌÄ!íû½ /kmósÿ%00¨Ş>§uWØ¶_àÇğĞ:ríëı{|d¦Ârm*º¦áhôR5¡{Qw$“08p''p»btÄ€ Å’" EÙ©*©±‰º²îÔ­15jRZ6>Ë!şEÌTÛV.¯İ/X?«õ*È2!JM#‹4•s³Ã±\Ro›P;Û]fNF^‘3ö\¶bÊuy#%25¤ˆ\É²°wdrÖÅ#œ¤eß‹nµ©‚-UR$™›>ç¢c›s®5‰…­İ˜FÁ*ÍhhÄsFgïtz‘ï[H´™ø-Ö*oÚ7rb:#‚.bª“’¬İË¤Wò–şêq¦i¤w31ËÇÃÎ9ßÊ¶„æ8ÕNA$v‘ÛÒ²R«œ4+(äÅS²eL¿G®S‘9uŠô%00	ÖŸ—IA(%00Â#Ë·W.©)@¾/tGÚöÄD} ñóü ìÕZÃ­%00w%00>TjÜ‡ŞrÑøÂ—ûõYÔå¬Jİ¶WÇ”êwÙm‘7œÁe‡ÆÕW‰¦í*/Ù]ìçb‘T[¸`«pOŸIÊ.TcZ*høõ]JZ1£¯Hâ–f)rJË²²ÆŒì"‚''šiPHHaå•Ï»hîÄ*’,–h PóKHÒC
+´®¨¦[‰R"Ä$ÓI1 :¤•Ò4˜3b%25˜ù„ıÑ£y,ÇÌ''è†y×¥_ÉgŞaODt¢xs{"üE~Lœ<>µø’i»e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¥)âèÑ£JQ£F)F4¥4hÒ”hÑ£JQ£F)FÂïï‡ì‹#nº¨‚÷mr¼"Å,%25ÇXòU¿«/TÅ»‡§ê ëqŠ,İ{]½ù6ºÅT‹Ñ{2ú&!şfÏÙ÷›Ròßgìûy.¯.¤AC,ìrI$¨ˆ¡I–8£V’FTVa…´vÈ±¹Ú[Jæ;;8Ì·’4ÈÎîÅcŠ(Õ¤–FHãG‘ÕOİğoƒìƒ…ÒæG6›Õ™g0˜×ÖL×,¡n" ¡#"›ôU;8ŞšNí6‡…~8@ÂG’ÎââŸiÅ…w›÷)Å‹äŒıi°İ—¸1k\3ÊeıY]^0 S›ÎŒtU|Î‹Ò”ë½•–î©©‡òrOTv1¾rÍ™Sp™BãœsDM;ÃÆK3µ_˜Ÿÿ%00La:üx7p–
+ÁmP^E«9ÊJ¤æzõŞK9x‹éŞØe0RÉá÷-_™âƒ\Õké× [¹·°jeW^Aò-1…Ù>üÍ¬²îIÙc¼“2G2dU@C­tdŒé_ªö.àYn~âï”ò,W»jçsöúßmMQÛ‡ÙW,¬ô˜à÷Ü''ô<Ü¤Gä=¹éû}= nM´M-Â¶ßMÜkš_L—%256½ª›ëôMBKƒœ$lâ%25c<{ƒw(ô!ÅK1ó	ú!£F(òY˜OÑù"¾É¯Û’›ÕmâE/HLŠÿ%00Ô®ZÖêÇœw!°½Ûn#7âí»âíÁTsÆÛ>xÂá¸{†±T''p%25çtvGNš´ƒÛFv³EY£÷‹uÕ—®;‹y[|šŒ_ ı»„6w“dGíNÃ¤B%00>0åâÖe´ÃİUYG\Tés&Sh‹˜‹ü}ÀÒ”œ¤»fËğÍÅ2b%25O~×a(ˆvvì£ùÀ5ÃöÁû´ø2ñ_ÓÖëüƒi•¹Ø]e Â50ı9ÛûuÁàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJZêÿ%00¤»ƒ&pK†v)MQ)º³Ÿ~WuSò™v‰P7!1
+ªf0%00T!„]p·Ajâ%25»ìÃbÍYª‹§,ÓGîH¨ÖÙvòÚ¹K¬6rªĞôê|QğZÄˆ€‰*"UôœÜÍÌ¼—xáá÷eğ~Õÿ%00µù‚z´x?jÿ%00€ÚüÁ=Zèwwzvæê\Íy°nâ±º!—a³¯%25ájÔcïí.šv%00È!1ñt§V„ÓÍï.èìï¶†Ëxlæ¿´·”Ï²í§e	›N‘$±ìûËEÑr"3‰8ZŸ‡£[êĞ‰¶İû‚š8˜ã»ÇHº]º™¢øx‰U"Ü" É¬é¸\©:U5L«¬P ©ù¶~Û''ÜŒFçh™c''ÆbêÕB˜ÊÄõ£z}æát±KÍÌÂ;¬4Œs9Š±ôlLRLgd¥œM%257,ìâ˜Ä§ªî&!¶}m°*º+@„jQúr¶öë''1~ÚaéJ¢£v )ôy	S)G°CÇÈÇşàë¥¾ô³éhÙ^lûÍ¿Æ³Ú·wû+bGÆ¶º…­çŒÉÍT×²kÒEÎQÕ€#—°ô;èçf_Ym+İ0Şìë»kÛ)½±·¥àİZL—òæÚ’Bü9‘_‡,oãK£) ä¾5lfµ¶i½*)‡ÿ%00Pş¹hÕåÈŒ‘D
+%00€%00<AËÅ£QÍI•Øhäãz4iJ§ _z_Ì­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”tïKùƒÕª¹%00xƒ–R4iJÿÙ', 'image/jpeg', '2009-12-31 04:27:26', 'fgdfg', 0)[0m
+Redirected to http://0.0.0.0:3000/pictures/3
+Completed in 28ms (DB: 0) | 302 Found [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:27:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 3) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 0) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #17 of app/views/pictures/show.html.erb:
+14: 
+15: 	<span class="picture_info">
+16: 		<span class="picture_user">
+17: 			Shared by <%=h @picture.user.name %>
+18: 		</span>
+19: 		<span class="picture_detail_info">
+20: 			<%=h did_when(@picture.created_at) %>
+
+    app/views/pictures/show.html.erb:17
+    app/controllers/pictures_controller.rb:18:in `show'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:32:17) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 24ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:32:20) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:32:30) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-1jumq5s-0>, "headline"=>"adsfwef", "user_id"=>"Preston"}}
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/pictures_controller.rb:88:in `initialize'
+  app/controllers/pictures_controller.rb:88:in `new'
+  app/controllers/pictures_controller.rb:88:in `create'
+
+Rendered rescues/_trace (84.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:32:55) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-39ryvb-0>, "headline"=>"adsfwef", "user_id"=>"Preston"}}
+  [4;36;1mPicture Create (16.7ms)[0m   [0;1mINSERT INTO "pictures" ("path_to_picture", "created_at", "picture_data", "content_type", "updated_at", "headline", "user_id") VALUES('svn.jpg', '2009-12-31 04:32:55', 'ÿØÿà%00JFIF%00%00H%00H%00%00ÿÛ%00C%00ÿÛ%00CÿÀ%00%00³%00—"%00ÿÄ%00%00%00%00%00%00%00%00%00%00%00%00%00	
+ÿÄ%00U%00%00
+	%00%00%00	!16s²Ñ9AQRYax“˜·"7Uu‘’¡±¶ÖØğSqÁÒ
+#$2Dbr&4‚¢ñáÿÄ%00%00%00%00%00%00%00%00%00%00%00%00%00ÿÄ%00?%00%00%00%00%00%00!1AQağ"q‘¡#2±áBrÑ3CST“ÁñRb’•–ÿÚ%00%00%00?%00ßØç*ey%00k³†ş6W¶‹K*6á7c¶Ìu“mi¨féŒ1¥¢F°öFR!•…~éh„–wîVj1¬ºq!(ÉrÁÚId…ÂDc!Ü9ä$!ÇŸo.Àø„=½+ ZOlâ_¿Wg?LcöuÃ’(Ÿ>@mâ|ë£Ïâ¢<¾?wJT<aø[€ˆxDv9ô±ÀÃû/Úùáˆáoğˆlséc¿´Êõ¥gúJ´Nóî³ä4ZŠMïX!åyÓ/Ü¹“Ç—©5DomDãoÈGŸVRvt@5Øn.ê¦ùïö—²ÚæŞêh®}S×rö°´æ.­Z~8’F×Å÷t~œ+÷¹÷vî7…6gµ–ÚâÒm}pØâ;©ÖÜKÇõKßÁ,‘.ƒÕ¯:×;xb8[ü"úXàoãíÿ%00†Ç>–8øû^~X¾¥b%25=%25Œm}X¾¶
+qã¸ß²u%25Òš£˜È³xÌình£8QÒÊ™Í“v³tÕšU¿mîA±jÕã¡ê‰È6Uã¸Ë~L¬óäåùÈÑÜ	—2F=e6İAã™''jLÎ\	Ñ„Ç/ÙöÚo.ûhb3­÷yR0t‡Ó—ÛêÌt²’QY ¬Á²%25Ú>êksqâPy"o#»‘«F¯swYj%00wW:‚•Á;Üxb8[ü"úXàoãíÿ%00†Ç>–8øû^yú«ÚTƒhéI:ëå³+ô›k.ß¹©Ñ''\¢l¹”INM\Š˜E’DL¦µŠ¢g(CˆxÀ¦)„?¿/s·ÛìÖZ}œVD›èeXnîAûÚÃ´ãÆÌ¸¥]NNòóÿ%00Ÿ¯FG„CcŸKü}£ÃÂßáØçÒÇkNŒl&ß%25ÁYTÍ¤ª•ëKÂ;*e9›÷ùªCtz@ CªÚiâ@`ÊtD;G^‡1p0gİ®QëŒ<€N¯@Æö»Gÿ%00ß¡ÿ%00ÜäÜ}¸»6§µ›Ômîå¸õ/QáI;Ì[¼ÔV$Š^''r& iÔÓ£­ø}şØrm§Ùc…¾Ò(={×ÄÑÃ$Ü	½NËNf’Xx|&Ç%00·ëÒ«“ÃÂßáØçÒÇhğÄp·øD69ô±ÀßÇÚe= ş„¾½ ş„¾½qş|‘ó®ş–·†#…¿Â!±Ï¥ş>Ñáˆáoğˆlséc¿´ÊzAı	}z:Aı	}zdwùòGÎ”µ¼1-ş},p7ñöG„CcŸKü}¦SÒèKëÑÒèKëÓ#¿Ï’>t¥®aø[ˆ€xDv9ô±ÀÁûoÚ›ğ~ş6W¹{KÚ6Ş÷c¶ÌåuŒsi’¨aüéŒ2]¢:°ÊF.!íı~—h›–iÒVr1Ôºío!/Égrı¢Jå×0ìíñøµå9ƒ@Ñ¥¥Jnˆ·u@|¿÷v(–cÛñƒ_—JUşC•BŠ<ÀtjÖ§ÈŒœ;w"<Ää óíåÚ·£JU½•NbUŸt{?Ü)è”W¥¯"‚qæ%25Ûò‡ş!–8“/ÎaÓrÊşK>ó
+z#¥Ã›Ùâ+òdááõ¯Ä“JSÅÒã§±lÁ¼li„''0”<İ§ÛnkÍ1–›JÂÕ+”r.9EZ¹î÷(NW¡,KÕ˜Qg%250‚F|z Ä)€@@ÇÌ%00yÿ%00x{—öës»Ûzÿ%00vvÅ–ÜÙœ]°yp$$M¶Ò¬ˆ¯2´3H¸§$ÖywzÃz¶%25şÀÚ|ac´%25˜ÛºÇ2˜."º‰ãwI2Mmï#s¯9ÅxFïR(š˜¶(@é¨‘‡ì}Ñ8F8y‡.Ş\»Ÿˆ5:3Ø²<+©|3¬åA¢­¡`,SàŠ ³#F½évhñ“]·j‹ngK<QTÍİ®z{ôwìQù’z´wìQù’zµ)Méã|n%00Ynìšrµ…Ñ*N­''ÚRÚFJyêˆaû=nu¹&¥¼Qê(X-í Påug•m9ls<½ãZ7ØGfÉ&Šx7òL©%00œÕúÁ”Té%25Ô™u1œÔ]ÊrñAåİù˜%00yr³í<4¸‚[Ù ÂWQ[·j÷»›Œ(ÁB¸LıK”¹\±‰Mnà1™€˜ÍÄíÙ¨µLGĞ¸Ûÿ%00bÌ“Õ£¸Ûÿ%00bÌ“Õ«Ó¦÷ÆáÒÃvÕÁÈeÙ×!³€3Ÿ_øüê÷û>î„‹¢M©¼®¤`«_Ú•#İÈÇ³ñÙô^êÔÏƒüõƒ3}¦ñ™©Í`‘qÂF²%25”"Íã÷ò&Xäl[t—4yS ‰Œ°çûOí¢‘@¥åÙÈ%00%00? rıƒşøD ó!_üHRşÎ_¯˜|Z¬|`iµo>òmìÛ;sjåÒÀ–ÈñÀ‹oo´b4w•”páVl»eË6@ 	Kt÷WgnvÅ·Ø{-®Òİç‘^åÒIÙ®''’âC#¤q+{ò°RpW¨Ô@LÄüÃşm%00ñr//îoÿ%00–ªĞøµ÷Z^/Ûé]-QÕ€ûEìø‡üÚùÕ€ûEüÃşmrhÕ9xyÇíô¥qõe÷ù‡üÚø%25ø€³Úl>1÷uË£N^qû})_ÅùGö¡ÇÄÃÖsyHS9÷Şk@?¨GS† İÈ}ç-Œ)¿U1Ï>{?¥*æÅG1êÌz]¿îôCF¨ÅK1ó	ú!£U¥_ÉgŞaODt¢xs{"üE~Lœ<>µø’i»e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¥)âê‘0Ÿä)è€ê­*+ˆ>={fîo|“<®ş¶ñO˜­ãÛÜå^çQ·''rgg¦=“‹¸Rc^ÃÏ7dÌÇYfÛÂ-ÜiSb&aU	ÀóßMtâüÂí.B%00<ù/!çª´ˆè– Ø?:GmÎ‚¦nîès®¯îZß•³=»o¸³
+:Úí\1ìıÒ•pZ6ÁvšÉ›­z¼ŞÙ,–!g7]JÙh†Šc\kÖ8âµšàáï³äÇX¿-°ÿ%00bÅ»\pçGeˆt„Î0Ëxç£U­d+Û6§Ü?“ŒÊpÖd²;¥TK>÷ìèuëJÚ»”ë>|òøUºÇnGÇàÇ´vvÓïÑ¤{»]ê¿Üb™cÃVª>fİU¿m´[}ß+8ñ*Æ7ÙëÇ¹Ìx¢:*ÖûªnîŒnX†ımÈ·Vš2KĞ-5–hÚÑ¥ñ=Üy1¶.É™6½¶
+ôFZÛ~õ²yßÊeJ5^‘ö‡•1î/g!t»½RìùL{”\Õ~fŠêéW“J«3¤f“v›íõóùUuù|;³ÿ%00PùÓğş¼Z§˜Ä>!şşB¹ş^ß×¤''dŞÖåòfÇXv"R»FqRâ)„°•Ìçe<|ï#ãŒ³kÎå#—Å–ì…¶¼DíyxYø™)éBÛa‰	,fÕsœ2ü{}Ş>ì­™W:m«ÃĞmŠ–û~©YµfÈóõ;¢˜ÛuRØKa¬háììd2©Í¹‰|{óçX,.Íİv­jhõE[ÒšÇïËùÿ%00LÓîè›İüÂ::''÷ß¬uø¢\»{ñûD˜½tÉ£—lzI$¹]²J®ÕÓE7É7XçE7‰¢’nˆB¸"I•@ v:yóÏãç­ÕÇÑ?¾ıc£¢}úÇ\š4çä~ÿ%00#š¸ú''÷ß¬uô%00Áã”GUèç§Ÿ<éF İÈ}ç-Œ)¿UNZƒw!÷œ´~0¥şıVt¥\x£Éf>a?D4hÅK1ó	ú!£JQ•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&›¶WòY÷˜SÑ(ŞÈ¿_“''­~$šR.¡ì¹€ñw%25 ™f“t.7»DäŠ''|ÜJ 5kì	$¾ Ñr1çm`†+‡=ê’éÄx¹pf†DË¬cÌ:4¥Cö,	‰-™b•œ¬T˜©\­«Ö:"èéY1”­Ö­ænkT$jIÈ''œm”ì£O<ÕF
+§,x˜s>Í-0‹7ğ§Ú…ïËÑqÖÆXşw¼*Tàf–‡³<c_Üª×>(nH›TT´7°)TfÖ6»[~Æ/I÷º‡b„p›=×Á`!îéÒ¨@=EiÕˆ"mëW²àóLä\Û–ğ2ùQy‘ó|Ns·Ñ¹Q2m“nq™›$Í¾ În²¡–¶ïK£„LÓjü$v] «&R—º,¦w''ráÏ4ÇâÏü•&˜ÈnwãŒ]P‹Ç³µF²n±íwpùj§R¶İs…cÊV²ì´m¡+|,«ÊÊ÷úÓ¨;¬Cª´`‹&É\6öû•.{¢¼Yd6“¬©â¨;wØõ¥8d¨Ö¬@úR¯–ñy\µ¼¦¼­IMX_e”»œ''Œ}»(g­dnöwcÊûxÌ·­Êe{½»o¶[å–=´gF×mJä
+XÊb.N*ŠÁHH„êàéãvõ‡±nk“‘véÃaaÂ¹ííÏÃ»¦9ø|:`×˜B9rÇ!Øy×Ÿiûyör«®¹w‡»ºNò%251>×?É{~¨å\v•r½Bãtªf=•ÁYÚDÚ³F1ŒÜ]G9CZ¡ºË:¥ÒË''P›ÌøÖ>N½“;Çh£µ°Èô›7ÆD®ƒ¦È>ˆ>}‚fJDcJõbkv™æR¹äL`Ä’ù{ìğ•³lûÇ×''WnñDîf$-rèöUÄK›‹L˜Ëü)ñl˜·Mİ²¾E55DÜ9«[ÏXÃ‡ÉTz–å+Vz=î¶Ot[½Ò«\£ÛækXÖ§eìUr’fUµ¢r£U}gLl·oø]äEv×Ÿòd5J!Õw~ê·''JJŒË?ÓÙÒñD>n±Í2¥ œ,%00_Öªå‰\p¼Ì})ÖOc!p+Fôæ³õÂºã©ú÷}ja»@ìêŸwoNg—å:í»ˆ>7Ï/ví†ó&-­ns	[3&˜¿ÃcØ¸Û[)t¸:}òÕ5L–‰¾Õß@£9ÊÅß%25á˜‘è&ò:¨å]ĞîÆù½GX;.Uğ¥glŠÁ¶\Q^šÆ0w–Y-QqÅçt»æW“C¯j¿3¦×*ØÚV—:”nNÖşÑ"îÇj`=½m«ÍìÍ­wxò–ö)ÇYoT
+Í|HÅåî-<¬@¹û3UYgÓ©™I¯ËTF‹äî×ÈIÈ¢«w83#î(áÍß_öô–Q½C2Ü©K’m1“âPŠÃÇÉtˆ›ı~Ã²4”^2£mµW<„—aM‰¶¼¬’R,mrş_§ûUA8ˆëØ@Ï»ÏGñ}1Rš\A«. nXâø¹(¹_m“2äz¡jñ­#t¹¸ƒÅÍÜ>µÇYf£’´e.^õ%00¥B»e¼W™KI"É•ºN±Úø½U	‚ÌUmºg¨Æ·¬º¥‡TÈ(bÈv«6ÕëVKF¤M#’­U‡£«32Ó²l»ge*„4ŠÎ–„$¿ê°m÷eÉNÌ(ËwMë˜Şå˜pşæ­8™\—,•ÛNnÁĞøóı^ä¹K-‘¤¾BsåÖ$Å÷Ë¼Bö¥!2‚‚•†]ÏpLä,q“”íwàl)½{,ıoDn{ÅÅ-+†a,y67wµ{-K GI>eId¹¤"àr¡iÒT¶°ærê2F`³EI0q_wÇ³åŸÏ9ğªeúdÌdó<û1Ÿk)[ñ
+^[c{>İ3‹''[öçOÜ…™İ p©èUœnòá\¢Ş­ò¶ìÇÚR\O!q•„jÒFmÍHÊq¬ü»±ÍñÓpœL^NbÌE3‡Éx>Ñ—g¶·™ğ¼Õê¦bsöØo»±ÛÖÉ''bÉi;cÚTƒªV{«ÙÆ&}…_ ÂB[j“lA''Í­qYyö&Ö¯•)™Ná›oùQz¶Øåöş©kªb˜ºÅ§ËÌÅM¸Re*.Q9²¼‹O¯c&ƒšwÅºìTå;H*ÅÂF…c«bú›¼ı›ËÔ±Î2Ào²Årr»ã<µ‰ó4=1º¯èJ¡ky+eÀøj½b¹ÛÉÚ_Ğh-ëÍŞ²‘²\,ôGÆ®÷ñÛôğíùÿ%00½6òˆ?|pü€s%00~`AûûÎZ?Rÿ%00~«:›‘!“L¥1„æ%00‘Ä¥(œÜ¾èâRr)zFæ=EçÑÀB;ûÎZ?Rÿ%00~«:¥_W(òY˜OÑ1G’Ì|Â~ˆhÒ”e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¦í•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&”§‹£F)F¤ş/Ëızû?şéJã:Ä''üÆ){y?wÜíöüZâîÖâ<bs÷=¿ÍÒÖn6É~Bé‹é´‰‰¬jÛİ¸•lİŠé¸<	ä›Á“¾%25à}"¹E©ßš´ƒõÉÿ%00C"ÂæÊı¶HRİ†BI£iUA­U­³~ÑFr½ä˜TÅX¨£"sœA>^Ü¤KGà$îÓ‚§¼6óOÊ$,qœ(''—.Ìsÿ%00šÃö+s‰^xË0\ôéìş‡Â›²’¬•GhS%00Ìè€—¥Ï´Ş.3s`%00&%00Ö7f,Xÿ%00#ÚëòŒkØjÉ_w›c|€ÎØo!d¤Szí´L…yúQË&Ñû©”\ÜsÂ÷ÉÊš?ˆ¹WKæNÀ‹¶r‹ÈnÂäŞ$æQ’QftôÆŸ»“¶W ˆw«‘Ñ|¡TDà\N¸„%00îÛÙœÅŠ0!ºkRB´dŠ-¢ÏÁë†h”ˆ?nªæZH‹4é¦éÓUªQës(),Œ\¡²ïÀ—>µaûfĞícÇo¾¾¼·>u()µK±,µYfXÃiŒÔÇ3íu™¸	Œ±OV5%25`äÖlş·Œ˜4‡ŒN©Ëw¤ÓO¢e\ÃÄ°;VÌtØ{y³\KÇÍíÌÚÑ‘o&e_©˜‘™-²8ÀÒY»³¿AÚ1õd$læ©åú1©1+¡m‘Ql×•m¹éöIÖÙLB;“(-™WØ¦İ%25°“fZ<Ã"“Ó¸”ìf¡Èºî
+]~¹+$A¥¡Sq¹+SY‡©L²ˆÑÒ“H€ŞJYHòD8$iUIËÅX¦~çbï«pb²[£§³/zp$øh~œ³õçÙÙÓ²Ñµìû$Oü—şÑ‘òÆy÷uÍdÕcn‹Á¯i;lwµˆvîèí¢+ËW+w†®b$4”sˆéò„“`R“6›¤\‹·‘Š¯M–%25€1nš­ĞQ6Å96‹ç8wg°©îÕq#OÈá$ƒ¡TÛ<Šfù»V¬rÂ·Ye,=Ege¬B™WN[4`Â3äîíâãír,·Eav¬:nL»•NílXE¤ıËI¹QnÈŒš:Jeé¤Aº©³r‚ÎÄ#zÕ¯•³Ôd$Å¶§šFÃS¨¯^ZUËºyh¹Ud$!cÚÖâ¦SQÂÆvŸBIf]côªnÜ—¨´KÎ[˜P¼‘º/!–R3Ó¦Hÿ%00Œö
+¾-§m+ˆÑ•Û=†îÉ8åÙÙ×ó"Iƒãøùˆº>ïíøõ^­
+LÏ«±²br‘~b~¬½.ˆ”Ç(ˆ@Â/DH"Q¿XU¶ ğƒw!÷œ´~0¥şıVu9jÜ‡ŞrÑøÂ—ûõYÒ«W(òY˜OÑ1G’Ì|Â~ˆhÒ”e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¦í•ü–}æôGJ''‡7²/ÄWäÉÃÃë_‰&”§‹£F)F©7ü£ù?hj­Råÿ%00åúô¥aÆàÜ\Ÿ·ÕÌ±ÈTî7s•0ë@T˜ŞiA Šb	ªR šÇ*JóP¤T¡Í2ëVü£PÎWyuN•‰ÇÕÌG1”^Ã¼e‘.HÍ>g?’æ##ç^×¬<‹ªÂ>~ê¬yÆ‘öQH°Oœ³déY Úr+¨[ö
+HSYoçPLs šxÖlKÑ1Hb¨q_ª!’¦=bŸıĞ‘MYw#‡7[Î™jÇˆ·B¯ÕVgY¦dlc‘Ÿ;ˆ±M¸»	#ÅIRÒ†YóÖlq$ô1fY	$›ÏQ7U¯$×LD`ˆĞE©C+Ç0O2Ã¯*7Ï:	ÖuHü\v6Ø¤œ¨ÀÒsĞò87væ«X•fëcË¤âÓs²Çy îÉgFFHÀ#;Z/x	 NµvUD^;‡«VĞ¬ådÙ5zÊuHŠµ—"¢íÕR§`3ªtU*±	Ş÷É£ô2Go0Õ¬BÍVRÏ £öîO/Õ¤‰Jï `XĞpæŸ2Gœ4\y¦ˆ±K¾‡h‘Ÿ7’˜lÔàÊ&(6—“jCÀÕû¦ıRÇîù7Õæ	_œ‰²Yç`ƒ×±4ü]nÉ¯#¢]D/a
+µnq´3IAÂQÍæ\5ZM4W3&‹µHê„Ğ`³D÷á‰:ba%00 ©éü8í<ê)İ;IdqÚƒ''#š•Ãú¹`ayçöë‰¿_g1‰ÁÍ6¶ã,†òZ!´Ûº¾Üy–ÓÄ3GO¤Ö¡‚Q&;É>ŠZ,©¼)dì¹¸Ü»Cİe_c¬TÊô-6Ql{}­âJl}¬Õ‘™ÌM@_ãàß¾u&ş5ÔCºåQ¹Í[m£ »°Y´)áƒ&±múœxÌL¨(_±òã,uK–&”Ç6ç–8ºÜ©dip,±Î˜8™ƒnáF<âä.$ëœ.ÄİFNãz«õö®­L£Şåe>Ì­ÒbÙ³å¸¼!ŠbG¾UTˆWZ¨2f+t*ˆÿ%00Ç¯ÖaµœsÄ9>ı›q’Ğ¤Äi]JêªéRÂEäIJ\µ¼¤ßîL3<‹‰ZË0VF:X– o{N¥È5ŞÒRÇ×4«ò­±]ñ“eQK;9zÍ?¿fbÁC@Ø"ÅÈ7w:‘–¹öK½"‘]BdW»9&xârÕ™ìöÛ]˜XğÑVåcÜ°B@îUæ	–£Ô}Q‹A œT;µ›3cWdŸpÆ¢äì%00EÂ…Ö²IİFÕXF¿Á
+¤¬£&V5T|ÚÅ:rªc_E0nİÃ—32oÍ"£Ã¶‹]²ˆ¹rø’mIóÆ.¦µû9ŸB5då½•›x¢5™Mÿ%00}à›dØĞ›]R0nXÙ	ê9UHèíI6«É©İYC †;Ú8Õ~ğ%00B¨8÷O<vöõíñ®Ÿsæ–KÏ¼bÄ.ÉÇAÌt$uæ{r<)áã÷H½ªÄ;n[¤å¹V"aÔ‡"¼Ò0ƒp@ÇHHqÃ¢^`^cË˜ŞÚq`ØT1LŠí„©œ N¼†éÇë™ÎEc˜Çz?wÑè”Å1BFÔ%25S:~şQúQ¨7ryËGã
+_ïÕgS– İÈ}ç-Œ)¿U*ê¸ñG’Ì|Â~ˆhÑŠ<–cæôCF”£+ù,ûÌ)è”Ood_ˆ¯É“‡‡Ö¿M7l¯ä³ï0§¢:Q<9½‘~"¿&NZüI4¥<]4iJ5I¼_ŸÑUªMâüşˆéJ^›¶¸ÆTïØQüºæe”åğËºçÉªŠi¹QT@DtG¦¯WÈ†®1ú(	V-ÆïV¯NİNA¹å•8$ ¬Ô)æÖjì¤mÃ»ÍP&phÆ‚5êÌr¿dÏŒ´Û¯²~õ÷Jl]¢³æÍCcÎ#õâIºÅí»©ê-e&.¬Õ¡R:c"Àvò5AC ¡š‚ÌWIDN s@ªÏwl1ëã”İk<ä›j‚2‰³Y#IIešÙÌŠ—8ô	Ş´…ÓÃ˜½4ú¶¥M5©pãn,“DÑ‰•ûædˆ&‚rì¡œtşI=Â£M÷uEe•¢ÎO«ÇÄ›Y1…ŒQyƒül%00ÁêpFÆëî¯n\æìn‚` 2öF„1G£ÏîËÿ%001~ä9óä î±Â×¼ı¶ä»5ÏlõÛ)íŒ±V™ˆ¬JÔÚÈ»ªXÔ“¤.İñu‚P;[Mº…EWEdfîÇ¦„’?r)êò¦|-~ÈbQêÕJõ]ˆ³mÚ%25Vè"Í2‘uEEØª²‡|äŠ<\Æ9…C¬q8©ÙË#k™êŞú:nôÌk˜Ø«r‘9}z0–Zj¸£4/zÙ Á&òùDÊÃ?bø«Å)êAG®d4·å½Ö¸­om%25¸ImÆè.@`$KIdš4c ÊÅ$Ü„’ª¨p"é#¼²áO}³.ííeŠ·QÈ³]Iª6½‚(e–.CË;FŠ9Šê|9&ÏtN½‹o“Ù‡J7Â3³5©6–	¦Ô-û‚«²N§
+²Õ"œ1™¶€°‘ì£úÛË±•xÊQ¤á!¢fÚ)$ut»œ"B‡m«ÏÙjÙ•—‰ŞĞî«¼{ÀÈlãÜ<b›ÁzTeV›v›¸¡`¢ö&îÊHõ7C×-ÃæMÁÜXÑ7™ Ô™@9³Tc8âjRÖ–Q/;Ró
+uÊ.xöœ®³6g‡|—+‚˜ê0›ä±ü>–ÊLzª=.z­#á¡æ£ƒ$$jû$koÛÅ"Ö%25­n"mK	.B$!ÉNäw$İ\‹X¦¸34q´B9Ö	’fS"°1£¿»tú#T*úÔ´rÅ–CÅ“Ux\^ZÛğ–I¢˜Knn-¤‹X@Cº®dµBò3«FQÔKÄ#Zjyİşì¡äv±‘§0íå8ÛY¼sŒÌ‹gª9‹—¾×ÙH#[ƒz«fÓnªª±ë"áE<{¢™¦s%001½œnrfÑl	«íÍb…lÕôÂ­M²3Ëürè0îÆÈ"
+3f(¤ƒpU''2+ªùn¹úÊ­×£§>SÎq×k®¹F‹†©PdgÚX	O†…¨F¢­YÏ}!&Ñ‰³È¤’ËtQˆen
+<9l±ÂÄ½×µkkÓ³]>âJ<«U#¼Nß›y´N—X¢ÙÁŠôäGBš
+ ~¨ë•Bq[ó%25¬¶“ˆ[Š±ERÍİG#	Œ/ÑĞ†PŒß§5×î\w¦X¥¸FÚY¤D`f³‘a6ÆxÀÌr2BARO,Vî¸Èø‚*ŸVªdTª”B”T2ªœê«¬TÆ¦
+ˆ©Ğ1€Å0È:±‰’™GêgÅh‡v*™G&D©Õ(ª°•Q1„°Å€ô~ç–¤AU9''à_å_ĞQ¨7ryËGã
+_ïÕgS– İÈ}ç-Œ)¿U*ê¸ñG’Ì|Â~ˆhÑŠ<–cæôCF”£+ù,ûÌ)è”Ood_ˆ¯É“‡‡Ö¿M7l¯ä³ï0§¢:Q<9½‘~"¿&NZüI4¥<]4iJ5I¼_ŸÑUªOâü¿à?ş|^=)K}Ë(¤î*l‰C"ó ¹tDTš)æQ#T§/V± %00$Pz0r/L_8ıùÎ·‡ÌyÌüC×ì¤ˆÂ0‚İ°8Z9³ÑEp\ı&ò±‡Q7É¸néV b•UJ§£®ùãHêÁŠ*‘¡¿½°# Ìn±jcâ*Jfêˆ³YÂÆËÖ*dAçéˆ|ö7Ç·+ôõÊA„„½İÔë«Š¡bâZËJUcpxÍ¾m.¤’„î‡†téã†èªR®tØ¶Tàš!nl…#¼GÆ¢0xdÌ‘ûÊÌ¥”	å’9·@MG»Ú¨òÛ¬Ùá	µÊAu:R6‘pÑƒ†ÕäØBp£›%00Rºª•EtÀQ1Ä¤E%00˜%00 _¹)CÄ/a÷!Ø·¶?ä¬õ×)Ç:s	IY3ªf*4ƒ¬m&™\$!e	œÆPÄ2ı!IiíBÚòRYc¾¯.^V)ØKÓç»™5aÖE«ÕAÚ* û©C¢áD] C%25İ­›¬`L:›HÊ‘ïÛÃ¹„•zõã7ÏZ¦Ö³gfíd(Ù''}\zğäUr Ûªªé¨"EU”*Š¤CôpXİÁqì‘º†I†%25·([ZéWE•¥Pä`Œds­,ûNÂêÖhibfW³Øu<4‘ÈĞ¬,TJÂV9Á
+Ü³F\;¾õF%25‰k=fƒ—€xÚ1˜¿nŒ{7§u‚©w
+‰åê\¢ğæ#AM8:û#	G`œ­u´Š•IH×6&-’\#%00“ŠÚÃª‚&æiE»‰11Œ¢°î ß˜¼Ÿ‚^„Û6DI•Iåb}0ftÂQÊĞÒé5bxÔÃázàœŒÅ4ÖAC‘HÉ@Qb¦Ÿn§zf›h(Öòe&àjÛ•£§"ªõjÔô=†Á#]}0â¿>µ}ã(ÒIG­à0Y7ìÓi1©äâ&ëa3ÜEÍ(Œ•ÑîÈ¼}&F%25°„0pua%00@¬’æÒÖiM¼|`JD\a„H#I.4çV¡§2lBûˆpvÒˆ0Q6êÒMÕHŸ¦¡¹4ÈTİ¦c$é€L¢d 
+F\ÂäŠˆ”	­Ñ¸B¦±¶±M³å%00z–Àˆ¹Uª”^ß&b‹•2i$à†3Šr(°(è*¢±ÓP5©mXŒŞ¨şÊ¤‹eã$VïÀZÌ“(¥HŠ/NÙéB ÈÌÚ.“Î¬)"¢@nr“[[ğÅ¤…/l6™Û
+©«0¼H7ëÊA?rÙ#ß5™]vÇ$dÎLì_µo vƒÕ•¹{­¢‡ÑíË)-6LÆk›wi9¤QÍ’*êC‡á³%00rOSø”Êİì«îĞT†Òík¥¦–İá…İ±Î> VeA*İõ¸''PT£ÁÆPæîp)…Ezãtˆ}hóÃ‘ÀLc!%00érå%25j5Ää!(°%00N˜ÌÑS ¡z³§Ö$S‰L˜%00DL"nˆó1@ÀSˆŸ¥©+Q5JIøùGéF İÈ}ç-Œ)¿UNZƒw!÷œ´~0¥şıVt«ªãÅK1ó	ú!£F(òY˜OÑRŒ¯ä³ï0§¢:Q<9½‘~"¿&NZüI4İ²¿’Ï¼ÂˆéDğæöEøŠü™8x}kñ$Ò”ñthÑ¥(Õ&ñ^ßgøê­R±sØ†å“ÕœÑß@1™­¿\ªXB\­Š„õqõmÂ„MYòM›H8ué1L­Ÿ•³“uÀP¢ô6È®ñå"ñ–Ü f‡#ƒGEäD%25Ÿ
++¨«!$ºââip!Ô]e¤,ùWBLªª,ª¢ñD€>çå)Gü5GPOxŸÍÕ¬ˆn§·çåÍƒÒ°®,-î[2¢¶{uƒ¼øR%25Sey²m}‚`Tly!T˜-ÀU ”$$S®EÖæ5l¹SX¼Œs$n÷³Œœªnİ8¥`‚.%25(!“?:D#s•8ô’Q2®‘ÁUá5EHª%25D…Tà=…Ô''ÈC NÑæ<Ó €o1aÚ#îo.Í}HÌ
+@l@€ş.Î]œû¿·Y''kmósÿ%00¨ßÖ±FÄ°ÜÆzv¹åú
+HDÙÎOL«7J€TS«AÑ9´Êh"¡Ÿ¢Q@(~wX‰¿ãĞ@®Á™%00…éœà$×ä_j9¯jÜøÓ	wWsªw)•†±È™:´İòiÊ±ŠGHÀc”¼“HêˆW‘Õ—.Eåÿ%00»ãìçË·ÛìíöûuOs¤Õ§Ì¢QÈÌÌÄ!íû½ /kmósÿ%00¨Ş>§uWØ¶_àÇğĞ:ríëı{|d¦Ârm*º¦áhôR5¡{Qw$“08p''p»btÄ€ Å’" EÙ©*©±‰º²îÔ­15jRZ6>Ë!şEÌTÛV.¯İ/X?«õ*È2!JM#‹4•s³Ã±\Ro›P;Û]fNF^‘3ö\¶bÊuy#%25¤ˆ\É²°wdrÖÅ#œ¤eß‹nµ©‚-UR$™›>ç¢c›s®5‰…­İ˜FÁ*ÍhhÄsFgïtz‘ï[H´™ø-Ö*oÚ7rb:#‚.bª“’¬İË¤Wò–şêq¦i¤w31ËÇÃÎ9ßÊ¶„æ8ÕNA$v‘ÛÒ²R«œ4+(äÅS²eL¿G®S‘9uŠô%00	ÖŸ—IA(%00Â#Ë·W.©)@¾/tGÚöÄD} ñóü ìÕZÃ­%00w%00>TjÜ‡ŞrÑøÂ—ûõYÔå¬Jİ¶WÇ”êwÙm‘7œÁe‡ÆÕW‰¦í*/Ù]ìçb‘T[¸`«pOŸIÊ.TcZ*høõ]JZ1£¯Hâ–f)rJË²²ÆŒì"‚''šiPHHaå•Ï»hîÄ*’,–h PóKHÒC
+´®¨¦[‰R"Ä$ÓI1 :¤•Ò4˜3b%25˜ù„ıÑ£y,ÇÌ''è†y×¥_ÉgŞaODt¢xs{"üE~Lœ<>µø’i»e%25Ÿy…=Ò‰áÍì‹ñù2pğú×âI¥)âèÑ£JQ£F)F4¥4hÒ”hÑ£JQ£F)FÂïï‡ì‹#nº¨‚÷mr¼"Å,%25ÇXòU¿«/TÅ»‡§ê ëqŠ,İ{]½ù6ºÅT‹Ñ{2ú&!şfÏÙ÷›Ròßgìûy.¯.¤AC,ìrI$¨ˆ¡I–8£V’FTVa…´vÈ±¹Ú[Jæ;;8Ì·’4ÈÎîÅcŠ(Õ¤–FHãG‘ÕOİğoƒìƒ…ÒæG6›Õ™g0˜×ÖL×,¡n" ¡#"›ôU;8ŞšNí6‡…~8@ÂG’ÎââŸiÅ…w›÷)Å‹äŒıi°İ—¸1k\3ÊeıY]^0 S›ÎŒtU|Î‹Ò”ë½•–î©©‡òrOTv1¾rÍ™Sp™BãœsDM;ÃÆK3µ_˜Ÿÿ%00La:üx7p–
+ÁmP^E«9ÊJ¤æzõŞK9x‹éŞØe0RÉá÷-_™âƒ\Õké× [¹·°jeW^Aò-1…Ù>üÍ¬²îIÙc¼“2G2dU@C­tdŒé_ªö.àYn~âï”ò,W»jçsöúßmMQÛ‡ÙW,¬ô˜à÷Ü''ô<Ü¤Gä=¹éû}= nM´M-Â¶ßMÜkš_L—%256½ª›ëôMBKƒœ$lâ%25c<{ƒw(ô!ÅK1ó	ú!£F(òY˜OÑù"¾É¯Û’›ÕmâE/HLŠÿ%00Ô®ZÖêÇœw!°½Ûn#7âí»âíÁTsÆÛ>xÂá¸{†±T''p%25çtvGNš´ƒÛFv³EY£÷‹uÕ—®;‹y[|šŒ_ ı»„6w“dGíNÃ¤B%00>0åâÖe´ÃİUYG\Tés&Sh‹˜‹ü}ÀÒ”œ¤»fËğÍÅ2b%25O~×a(ˆvvì£ùÀ5ÃöÁû´ø2ñ_ÓÖëüƒi•¹Ø]e Â50ı9ÛûuÁàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJ[l»Oƒ/ı=n¿È6¶İ§Á—Šş·_äL“ÁûWü×æ	êÑàı«şkóõiJZêÿ%00¤»ƒ&pK†v)MQ)º³Ÿ~WuSò™v‰P7!1
+ªf0%00T!„]p·Ajâ%25»ìÃbÍYª‹§,ÓGîH¨ÖÙvòÚ¹K¬6rªĞôê|QğZÄˆ€‰*"UôœÜÍÌ¼—xáá÷eğ~Õÿ%00µù‚z´x?jÿ%00€ÚüÁ=Zèwwzvæê\Íy°nâ±º!—a³¯%25ájÔcïí.šv%00È!1ñt§V„ÓÍï.èìï¶†Ëxlæ¿´·”Ï²í§e	›N‘$±ìûËEÑr"3‰8ZŸ‡£[êĞ‰¶İû‚š8˜ã»ÇHº]º™¢øx‰U"Ü" É¬é¸\©:U5L«¬P ©ù¶~Û''ÜŒFçh™c''ÆbêÕB˜ÊÄõ£z}æát±KÍÌÂ;¬4Œs9Š±ôlLRLgd¥œM%257,ìâ˜Ä§ªî&!¶}m°*º+@„jQúr¶öë''1~ÚaéJ¢£v )ôy	S)G°CÇÈÇşàë¥¾ô³éhÙ^lûÍ¿Æ³Ú·wû+bGÆ¶º…­çŒÉÍT×²kÒEÎQÕ€#—°ô;èçf_Ym+İ0Şìë»kÛ)½±·¥àİZL—òæÚ’Bü9‘_‡,oãK£) ä¾5lfµ¶i½*)‡ÿ%00Pş¹hÕåÈŒ‘D
+%00€%00<AËÅ£QÍI•Øhäãz4iJ§ _z_Ì­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”t	ïKú!êÑĞ''½/è‡«F)G@ô¿¢­{Òşˆz´hÒ”tïKùƒÕª¹%00xƒ–R4iJÿÙ', 'image/jpeg', '2009-12-31 04:32:55', 'adsfwef', 1)[0m
+Redirected to http://0.0.0.0:3000/pictures/4
+Completed in 32ms (DB: 17) | 302 Found [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:32:55) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.9ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 20:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/svn.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:36:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/pictures_controller.rb:22:in `show'
+
+Rendered rescues/_trace (98.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:37:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.3ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 44ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:37:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.1ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 20:37:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/svn.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:37:57) [GET]
+  Parameters: {"id"=>"4"}
+
+ActionController::UnknownAction (No action responded to picture. Actions: add_caption, add_new_picture, caption_vote, create, destroy, edit, force_user_id, get_session_user_id, index, new, set_session_user_id, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:39:09) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 50ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 20:39:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/svn.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:39:10) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:41:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:41:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.3ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:41:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.3ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.1ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:41:32) [GET]
+  Parameters: {"id"=>"4", "height"=>"200", "style"=>"vertical-align:text-top;", "width"=>"200"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4?height=200&style=vertical-align%3Atext-top%3B&width=200]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:42:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.1ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:42:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:42:44) [GET]
+  [4;35;1mPicture Load (0.7ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #7 of app/views/pictures/_picture.html.erb:
+4: 	<table border=0>
+5: 	<tr>
+6: 	<td valign=top>
+7: 	<%= link_to image_tag(url_for(:action => 'picture', :id => @picture.id), :width => 100, :height => 100, :style => 'vertical-align:text-top;'), :action => :show, :id => picture.id %>
+8: 
+9: 	</td>
+10: 	<td valign=top>
+
+    app/views/pictures/_picture.html.erb:7
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:43:16) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #7 of app/views/pictures/_picture.html.erb:
+4: 	<table border=0>
+5: 	<tr>
+6: 	<td valign=top>
+7: 	<%= link_to image_tag(url_for(:action => 'picture', :id => @picture.id), :width => 100, :height => 100, :style => 'vertical-align:text-top;'), :action => :show, :id => picture.id %>
+8: 
+9: 	</td>
+10: 	<td valign=top>
+
+    app/views/pictures/_picture.html.erb:7
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:43:40) [GET]
+  [4;35;1mPicture Load (0.6ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #7 of app/views/pictures/_picture.html.erb:
+4: 	<table border=0>
+5: 	<tr>
+6: 	<td valign=top>
+7: 	<%= link_to image_tag(url_for(:action => 'picture', :id => @picture.id), :width => 100, :height => 100, :style => 'vertical-align:text-top;'), :action => :show, :id => picture.id %>
+8: 
+9: 	</td>
+10: 	<td valign=top>
+
+    app/views/pictures/_picture.html.erb:7
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (104.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:43:57) [GET]
+  [4;36;1mPicture Load (0.5ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.1ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (10.2ms)
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:43:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "email") VALUES('Preston', '2009-12-31 04:44:38', '2009-12-31 04:44:38', 'preston@preston.com')[0m
+  [4;35;1mCaption Create (0.3ms)[0m   [0mINSERT INTO "captions" ("created_at", "updated_at", "headline", "user_id", "picture_id") VALUES('2009-12-31 04:44:38', '2009-12-31 04:44:38', 'What is up with that????', NULL, NULL)[0m
+  [4;36;1mCaption Update (0.3ms)[0m   [0;1mUPDATE "captions" SET "updated_at" = '2009-12-31 04:44:38', "user_id" = 3 WHERE "id" = 10[0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".user_id = 3) [0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "email") VALUES('Alexis', '2009-12-31 04:44:38', '2009-12-31 04:44:38', 'alexis@alexis.com')[0m
+  [4;35;1mCaption Create (0.3ms)[0m   [0mINSERT INTO "captions" ("created_at", "updated_at", "headline", "user_id", "picture_id") VALUES('2009-12-31 04:44:38', '2009-12-31 04:44:38', 'That is whacked stuff', NULL, NULL)[0m
+  [4;36;1mCaption Update (0.2ms)[0m   [0;1mUPDATE "captions" SET "updated_at" = '2009-12-31 04:44:38', "user_id" = 4 WHERE "id" = 11[0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".user_id = 4) [0m
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+
+
+Processing PicturesController#new (for 127.0.0.1 at 2009-12-30 20:45:58) [GET]
+Rendering template within layouts/pictures
+Rendering pictures/new
+Completed in 78ms (View: 73, DB: 0) | 200 OK [http://0.0.0.0/pictures/new]
+
+
+Processing PicturesController#create (for 127.0.0.1 at 2009-12-30 20:46:14) [POST]
+  Parameters: {"commit"=>"Add My New Picture", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "picture"=>{"uploaded_picture"=>#<File:/var/folders/dk/dkV8L-YUF1GRrOtPqIp9yE+++TM/-Tmp-/RackMultipart20091230-878-jxof2b-0>, "headline"=>"Ridin' the Rails, baby!", "user_id"=>"Preston"}}
+  [4;36;1mPicture Create (9.4ms)[0m   [0;1mINSERT INTO "pictures" ("path_to_picture", "created_at", "picture_data", "content_type", "updated_at", "headline", "user_id") VALUES('rails.png', '2009-12-31 04:46:14', '‰PNG
+
+%00%00%00IHDR%00%00%002%00%00%00@%00%00%00XÕ${%00%00%00tEXtSoftware%00Adobe ImageReadyqÉe<%00%00˜IDATxÚ¬[	”\e•şŞR¯Ö®®^ª;IwgßÃ‚a×È@`ÄñÈÉÇíè¨gÆãœGgDgtÜqDFqFñ ¢DÄqFÈ’@ÒéNºÓûRU]Ë«÷Ş|÷ÿ_-Q˜Çyéª÷^ıïŞÿŞïŞïŞÿÇ¸.İ‹ğ0‚%00WÀ_6€ÍkšùbğfÌ»Ü¸ù‡£6À«<4Æw5ÿæ~*rÛá—?À¿9–ñîöˆm´Ø&"¦ØãMß÷ù7@vm''Ú· {¼_¿S)Vû¬ÿi\“ÃWôG?¨Ë¸Õ«jM‹dÜ@	lDLXé¸ºW-TàÍUá+@ŞEPào\&*R¹¢§áûnn‰˜¹,á fšğDÀWrX|¸Ê3M£=Û§\‚İƒŠ«÷Eç³JˆºB–[döµ6A¨¨º''Ÿ=‘t¬x^©„ÊÔ$Çòa86Ìˆ¥®ò{,
+Ï±Pµ©ŒepNø*_ìW©ˆ_3¢oóŸ·;†ñŞ¥ñ(•0àòE¾:¡¬àñƒÏÙiïËÒ6ªeÎÌXn¡ŒhGf"ƒÂúL|S+(+.gĞ¤¾–­g=¨Y‡c—Êh=m#V_û·¬Š#ÿû}èñ‚ÇªòİÎ|±ŒÀâtR	ñŸŞD8VÙÕ„‰M~xg!ni%25DyŸ(¡”¡‰îâé…õ•ÛB,{(äàNÎÁ´ãpÒˆ$3°ãiØ±$ìh›.@ße[a''ãœeºJÔ‚³yš¼Åì‹Ï 4>ŒH*ƒöMçÂéHQ(Jgt-ƒÖ¢»QI^·‚ğ©dĞÂ„@áçsÓÔÒ-¡''-´
+51¤{³''%00Ò0õ ÕÙ|În4Û‰h{V½@Ü©çâw"»éB¾ËTŠ=rŸzqP­pBè‘HãÈƒ?¢Åˆƒâ]-ÃqópgsPiŠSÓª®…ög`j×n¸ù)˜‰šÊõŠ%00¶må¾¡B2L†.¥ûx!¸j¦ÔúJ¡À÷P! Kˆ/\¤
+Ê®RB[0µç9TrÓˆu. Ş¢uå©Hö®$´…Á™DDQÒ+ä:ˆÜÁİ˜Ù»3/¾ŒçnÁò«Şÿú%25äöõSjm‰2Ğå!&D/ü[¥EÚHw·Wş	‘ßA-RR!ê•æP eŠu„•HÁimÇè“"µtÚ6lF²g¹²Ğ«-ËO.¸å™1Œ?÷ÆúÒksX~õVìúêtmZJğR1êŠÔ1èé¦N÷ÌôuÁ&Ğ<Ïõ â½©,T™šbÈ,`ğçw¢óÌ°ğWP¥x-G´5‹¯ä—ãèÃ`ø±•Õ´/5pbêğÔÁ­¬Aà©öt¨ÄIVJç_«]§›0/´²‰¾½‰DiòH=¿–Ã´#è»ø*œö77 ç-3‚Ññ	şVuQØ0ê.…¨ÍpÛİ”Ó%25ĞyÀw	Ú ÂhÑ™Wğâ¹0ã),ºô2$—ôbúà6&²¼ÄI/@báj$²ËöøI®–‹(fx''¨æJ…nËÉOµ"±`©ÂØŸø<-¼/ßúŸL®Ñ®%25^ÏÈ«œÍ¶ŞnÄ2½ªwÒ—ùå2}}Xüö­úÕ½È¼L€''Q£Ù-,¿ümˆ/ê¤‹Â4#0“­´Š‹òôQ”&0›È0¤¯à¹NK—r¯<‡éıÏböğ^¢kN#_%00wzU7hg''C{
+-½k=ç"¬y÷‡Q"÷Ş~šjë¼húï[#V\\Í€“t¯êÓ®Ì''K„3ÌJQ…Î5¹¾{ÚOÛ„Â±~ŒışEäXö®+ÑuÖTÂ3ˆ/Ád}j¤¬"ÉQ„.M 8öÜâæ#wh/ïÛŒfg0çTàp’ü9-cÉïƒC«ìûŞ8öØ£Ê‹&Ÿ{³ƒÃÊ•K6Âä''fñi•Ìâ.D˜ O°F¨X•¥÷’+°à¼KPš"…0ĞuşE8pÇ¯±ê=W¡÷Ò‹àås¤Nt7_¶©Ât˜ê»q;* eªØõíÛ0üÈdÖ.Æêk¶¢óŒéŠÓ¨L¨I°¢qÅ*ÿô{t·	Z%25‚¹á~ìşæcÆ%25š²HÊ6â>sA,›A×²…Ú×æ)¡£ƒaIäE¹C(ÒERK{8‚çÿé«È¬[µy?iI5$¬†%25ê·fø{}Šu¬¨ƒ—îúúïŞFäûÇ1¶ãÌ~ã;v1l''‰¦˜@åç¤F…æ¡Œ
+''IF''mñ!K¤7ã…Ğ"Œ&­]ÒÍw1ó5¨#4V§iò‘Å¾nÇÔö[Ô—ávãÇ8Äš…Ø)>Cá=L´B´ˆ“Àào~‹é½/ø¸3%25ºw´‚·ÿFı4Ö“ÁÊ¿8™Ş>bWX@‡bÆÉb@¼ÙIzP9ĞI±vÁFfQÉL‹Ê!2c£EP(se4~¦5RhƒAÂ90‚‘_?‡ æcóMŸE¢§teV¹”OaOr
+İÓ÷B¦ª]ËpÈ±ÆØ“»±ñ“"EyïxˆÏ:ü­	ÇŠ)‹–Ìbl×‹hYâÀu…ÖÄT´™dâÔ«æÈíwš=Ø¢¥M€gw“VPè™OFÎ’â2¶æ5-TD—[ŠåZ2Ã>–]ıV,xÓ›IOŠ²Æ…)œJ”ñÍº[)?cn28pÿ#(çmkÇÒ+.Âè£/ phœÊ®×Q6?³wå7‘îÇHãIoÄSj)“ÅÉ1<±¤ÙÈ#í¬-œ£¨Næ9ûO1Í°ØÑéŞkÂIäòK´¬éÁÊ÷¿—r:¼Ç(Å—‹;rº“R&<9€ª3¦v¿@Áw(w:ø“Ğ~æ:T¦óÊFSŞ’ï•±"¦ö£ç¼ÕŠ’Tád®Ì¬T‚ã9ˆæıPIb“3•…˜JØzæóT’Q×„¥BÕP23´Æµï¢éW’­Î*|@^¤¬¡)Q³ŒüwåÃ?I¬éqŞû=ü,¼™Š<@Ğ B8)“;¢û¬50ù¼éHˆ-=ıTÁ	í”SAº@Œ”Œ@¹„f‚5Ş¨r”é[ƒÊT%25#c|…õÃZ&Äw(B)tD¹•Q%25Êvø™yCşš‘(â,ÆŸ|ï‰ÁƒŠÊ°¶ÆÉi‰‰¹ä&å—<#u:Íëª3E­HkÍzÕĞ´)nd¶ØF>1Vä2À²k®F¼½GYL	KáMQÀlR&TBşÚ,igv¿ˆòè8]C%00œ8S±f#Ä…4æQ¡ŠÚ¬Õ''?Ìç¢,ÈÊ=¥ËaVÕ9WEX³ö³Yr§rà‡ª*Ô!âcÍõÄÆ¯~­×)Ğú,=ÛøyÑŸ]ªj–lGeíšEÌº5´r_2ñÔ}d×"½a‰ª]Œ0ßM9·¦PˆZ¶…ÙİG17‡ÍÌnE"ÊR¢ˆÇrÛó\ñY‡Q‰)!|5U(d¬·=—^‰Å—¿o¼ãÇ8õ³×+Ğö¼õ2ÀNU“6jB[¡àëˆB5ÅèV.]šÅ²­Wãô/^¯”‘ä©¬Ğôßñ
+´Š;Y"Vúi‘$±’¤2¶ŠœÕÙ²º_§ñµc‚‰Æ«(F^Eçùg“qö©{–C°ñŒ÷P¹‹/#K8ã–İôY+%00QÈ
+İMğ1>ÜAÌìß®Íç¢ëÂÍ,gİy®t²Ş•n,˜˜z¾ŸÅE$‘VÀ÷Š.ñÉävßÌæÌâ.†PyLaèpóâÈÏîGç9TnÑÒ:uiàÀšçRZ!z‹I0?ĞÒá1<ÿ‰/`àû˜7ÈÓ$)XÆqøhØ¦všt¯¹Ã“,}‡˜ÓäjITòeuÓ°Ìù¢r0šë³h§%25” ‰£ÿıKŒüîQ’Â˜3V£0<ˆ%25W¿ëÄ&¢„V‚< ÎÄ5%25ÔJ2”Sø™IE
+ÃJÒÊX;>u#­$¬6ªÉ±¯óGM™ÀhØF…d˜td|Û~dÏ\O9Ijç**záDØb)PBÌÒ½¦h•…-qøqîl‘%25ë/€{ïGzÍ*d7ŸóŠ=QS]:‡ˆRº©QbÂUàMPá’¯‚†ò$%25½æ¨ du]õˆXefïQzÈ$Ÿ«(¾¥''Ğ˜‘Z‹HŠ«#äÇAÜRÂX¬íDB	Ø~öÈÿ`‹×0.F|XŒXKì)æêé™w¬FoÊlzyÈhÔßš»ÕÜKz³Œ>±“‚.&nEjÍ„™U,2''•ƒ÷%00&iwö¬óşè[’d­À[	™ÓV)ö*¦Q§a†v¦†›úl…êQÌDit[VŠIQ‰ÚhRÄ@½$)Éy~mÆ|ÒøäŠ>ºÖú?­cJ+V²H''6şË?ã7iÖ.ûX‹H8ÌFŞ¨)d†AYøUÂBjE»"—Š.ñ4w-?lÍÚÔ2ÃYœ™.Á•úÎRj¤W¬D¢«÷µö@BÜØ¬.ß†sşã[H-gA—S™F¨3ÿÚFıj™ÅÒ]úØ¢œ„ÊèBPë–¬…_—>M%25bt—©?_rÕ¬	-h]·öµ·rœ_Å¾[nÂÈ¶‡˜›Q‘ªã¢+GÔ­_û\ÃŠ
+±şZÙ¦fÜeÑÖĞÏótŒ(|ºU(‡Ü''.g	®VFÃENÇë9’½½üé}Ll»4ÎTÅ&ntoÂ¨Ó’ œX	ÉFßéˆ"º€…_‰ÕfYzÇF˜~y& Gu]$›§æO[Èöv#]ğº‰.è@$VA`â±§T°¢Ñ°õZ[2šº–µuİ+ˆ/mUÁCò‡_T½n‡y¤Ñ —|l\«³¹şÌMÌ"G[¼¸±ìëR$µd™Š|:—Ä›º“F½Ii„reÚ"Ùµ³át· Ê%00ä“ú,¼+ÛŒ­1ÜìZ1Ú1ÉÈÒuÑ‘dt*çK¨2éÜsŒd;	[êõ)²x¥²€W.¡¹z2jåTh#D®VŒß\NO
+&eó…_±v’U2Ÿ×İBè^µ¨%25ã¶0FÛÓHöô²(/Ô˜I§2>‰’•Àë=œLñÅ]ºÑdvUUëpk"ìijBœ®$’,O-0y<}~®Ã*Tºö£5LÄùErE4İBß³XŠÆX‚N£:<†9š²¼>Eìd
+-ËV*‹ø®«»êu¥B…LÍİÒs»µN*Š*­á…JxåªRÈÍUÁôÄè¾–,ôÈìTÊ(ìÛƒ•ÈûËGuÔ ÿŸ@÷âÅ¯Yƒ{ëÚu|ùCïJF¯(OL°bœÔ±–Ñín‚Õ´iKhp‹ğÒ×·’F»tx8³#µ¸ª9Fs±FŸÚ‹è³û½®DT‘¨A”n1vğeF¯^M^kfĞÈ.Ä†İ V¨Ê“Ç°ı3ŸÄøãÏÀJÆËaãY@n&»ªjµ‚Llø:Š¤Mô¬‰cÓšğêÂ…Æà—<ÿNğÁ#Å
+Nä062KkYˆµ¤QÆ,yÎë9Ú6lBşp?r‡(ÚëX„eW_.KuJR''‚-^x¢"^‘j’n5RE0&¦`iÎP\¬”4^º''j-!õæ’*´¨`4†£ü]Ô-"ñâ>´vu×ËË?9—´w!–íÂÎ/~­ë×#ÚÚÉh…“í ›MªÄÛÈò”ƒÚ› °ó®Ì´nMA}m W,)(ìÃ®….µ¦N¬yÛ%25$æÇà³*ËóŞş={P9Šîõ§¢cé
+D“zHî>ÿBlÿäu˜Ş¾K78˜x-Ö>V,¢ó‰''µJU»× \L¯¹]Èl¥é>W*ªr¡Ù-h«Xóªf~oI†“Z3fç±î>v‰öN´3
+u¯Z‡Tgg}÷Õö363:.g/-ÒH¸+"P‰ÎÏKÛ‰SZô4´„òZÕ_×ò¦<K*¹š­Şë7¢È*ì@g¥yK
+&™ø›¸AÒI)W‹³Úù4FìF[ßRt­Ş€ÌÂ¾×şƒŠƒîŞò&Ü}7''™®ÃÙ÷f«ª7h`İ0ÎÚş•p[‡(>GlXM¾c7¶é"§Ê;Ò¿
+‹£òĞ(İ÷5f‚MÄğUC¯¶OF6Ü±ÎßCNf³t¹>$S1V†aéêëR·&œ4)æ¡ÊÈâÍéÙ—†a y]‘ä%25íW	·AÍ*|g©XĞ{Q¤Ÿc>iTX1‚F‡‰ ®M`|à!Ó[$‚±¦PŠ4šªÊŠ¢Ğ$ı¶Ÿ#,d«ÉŒƒ(?KT¬JR¥Û¸SŒû%25C7ôjûHšÖbæµƒj+ÊáN$©,³[.@Ë¹›ĞÑ¾ÿş_ ÈÏà?™.3ëÖúÄµÂH"U$âĞZ¶^ªñX0É2!KÚc©	²ù¥8Åqè.N«¬‰ˆMI6–N&3µŠ÷n8´¤eë¤ëöÁx¥oéÈW¦fP˜™Ä²ËŞB<pğ—¿R·ÿ±EAì®¤dÑ¨o$*ÎäÈm³)e9¥D©«5‚X[…·T$©LÎ :]†C<I·äPPÁ\:­q´HDI+Ì˜…Hg«š¿Pf~˜Ó®Õ4›W†İ™€İ’Ò{¤M(§Æú‘¿s?ø²%00D^(õû<Ed«Rfq7¶~÷6´²Š>$n#m›±C±ëÖ[P~ˆYØtè*dÏ?§\÷q´®^WÇÁôıØùõ›XsìÄ!ÓEæü-øø­·2#—°ûË_Æàmw£å¼õ8û;·2!váàwà…ü:™D²¾”á›Uôn½Ëßó$)GàiG–nÎ3_ÿÆoş¼ñ	EÕZE3Øk½-™™–îEHv.œOÃ»zĞEŠòø>€™ç"Ö›Á¦Ï}í§l÷\¼³‰/-À·nÅØ±QôÄãH¦ÛÔ½aâb*â#K×‹¶eIÊÆ³d#G¨et\¸§æóêş	,:•‚MëÛÃœÇIC³}òmúÙ½ƒO?¶e«°bË%25¤øËÙ°SÛö²tíB|Aznôéßazÿ*µÏFlQ/¬Kàƒøu¿uı*1’wËDÖvÖ¿E„×ÛÖ¯SJTK¸ı;(¼4 k–Æ£;v2P9º—`Ìk‰Œ©ê»{ï¿?~ß_ã‰[¾Ùh¬Ê¢^9×Ñ„Ç¡;„m|îğİ]oÒ9<#Òjz…\“èwÄD½,8éVĞ]ä]©%25K9e­êræ‡‡0ñônº¶©Û^FcIÂ>é`¡U–¾ùb¼í+²kÖ…O1|NO©šæ]‘t+,Èl©_³Ë®6«	Ä’D½¼b§rzß^•pe7^ßåï¨ß[ñŞaûŸÃ¾oÜÎç¢º jNˆÆ+x×Òs·¨áNÓC÷ß…ÉÇwĞÌÎ¼ç7|üz¬şà‡a2õ,•¤ô
+omîµrb©ÆZˆ‰~¥›,pN>¶;?÷Y,İzÚï²™¡[uâ—¿ãjüîÌ¾ªq4aÄ<qÛIø’ªZcû¿ƒ§>ıôúqîæ±Ú¶Nu6Z£‰»id‡÷êàîè@âÜõh!•åçâÁ!µF9òğ#˜Üş,#UŒØr±áºOaÑ—0=DÃ¥„ ,,›,b¡±E·#ÏÿôÇÈ®Xƒ¾3ÎÂª‹ÿ÷Şê¶=ÌaÖ<Ó=ÿ&_~	ÙµëÑ½acj˜Áñ«’†ÂLsÎXuéX¾åB
+è(wzò£EÀ»ék_QIÙ*4''Ñ£«SÙl£–Êç{’.,¬pÛµÒĞ2ë¡`jpÜğ¨Ìå^Ø‡‹núZÎX¡öPÉò—Åº^]wŞ‰Ÿ]ûaìÿÅÏÃQ-µàoIÆ5íº’O“3a–]¨
+_¬wb	Å­L¬]êº$ÁÖ§"½|sÔ©È¬=İVˆÑïŞLIUªbYY‘æ®­Í¢I¢$˜Òt¿½ùf$2í|r;ÿ~''îúèG°òôˆSøXk©á‡¦ğÔ­ßF4Áô—‘b‘4úìxúßo[,¢04F•Àì¡~<}Û­ª%00ßÃRš%25mybš×¾Å\mlO—‚.4}t”E\€½7}M)¯êtÕ‰ô1şì3˜x”îF÷
+[¾-»2Æ6ãºtïä¢„İ&ü¨èEÑ"9Œ€;ÂÙœ±rq	âe)ÍßK!Ç:bŠæwY¡	}¥g;J×¨”Õ)5D$!KÉ¤9®Êß«-Kñ˜Ú$ë$¢ì	»óè±h–l™…ŞDÚØÖUFF
+ª¡J{s2®R‰Ë6rC÷Õ&ğ¼&æ0;ûá@>›ç]›/¤Z’3±E,k;(2^‹®å0ÚÔ9<µjCE“õíSõ{Ğ}àéŒ6NF´â)ü6/”ª}.‚KZâ%25Ùğ|Ÿ×ïSĞğš6W6ïëm%00R=Ò*	íğ¿''MO‡R…Û8P«Áë«5~ÓçF£¡ş]w„0êXhq©H°…u89c´Ä¤«
+øğúÇjQkª¿P±Pß
+üÊ‡,Éáø?''ş?àäËÕRƒI!ÿ4#ßm¼÷³Ú£ÿ''À%00¾˜œ-ë³%00%00%00%00IEND®B`‚', 'image/png', '2009-12-31 04:46:14', 'Ridin'' the Rails, baby!', 1)[0m
+Redirected to http://0.0.0.0:3000/pictures/5
+Completed in 26ms (DB: 9) | 302 Found [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:46:14) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/pictures/5]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:14) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#edit (for 127.0.0.1 at 2009-12-30 20:46:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Rendering template within layouts/pictures
+Rendering pictures/edit
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/pictures/5/edit]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:46:23) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.1ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (102.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCaption Load (0.1ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+Rendered pictures/_picture (1.1ms)
+Completed in 112ms (View: 105, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:23) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:24) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:46:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/pictures/5]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#add_caption (for 127.0.0.1 at 2009-12-30 20:46:46) [POST]
+  Parameters: {"name"=>"add_caption", "new_caption"=>"Brilliant thoughts going on here!", "commit"=>"Suggest", "authenticity_token"=>"pRxOqCdQDCAr0ssdL2cGYile43yWLdvCBHZqhHy1jAE=", "username"=>"Preston", "picture_id"=>"5", "_"=>""}
+  [4;35;1mCaption Create (0.4ms)[0m   [0mINSERT INTO "captions" ("created_at", "updated_at", "headline", "user_id", "picture_id") VALUES('2009-12-31 04:46:46', '2009-12-31 04:46:46', 'Brilliant thoughts going on here!', 1, 5)[0m
+  [4;36;1mPicture Load (0.3ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Rendering pictures/add_caption
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.1ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (8.2ms)
+Completed in 83ms (View: 62, DB: 1) | 200 OK [http://0.0.0.0/pictures/add_caption?name=add_caption]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-30 20:46:49) [GET]
+  Parameters: {"id"=>"12", "u"=>"n"}
+  [4;36;1mVote Create (0.3ms)[0m   [0;1mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(12, '2009-12-31 04:46:49', '2009-12-31 04:46:49', 1, 'n')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 50ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/12?u=n]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:46:49) [GET]
+  [4;35;1mPicture Load (0.6ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.1ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (9.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.2ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (4.7ms)
+Rendered pictures/_picture (7.3ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:49) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#caption_vote (for 127.0.0.1 at 2009-12-30 20:46:52) [GET]
+  Parameters: {"id"=>"12", "u"=>"y"}
+  [4;36;1mVote Create (0.3ms)[0m   [0;1mINSERT INTO "votes" ("caption_id", "created_at", "updated_at", "user_id", "is_up") VALUES(12, '2009-12-31 04:46:52', '2009-12-31 04:46:52', 1, 'y')[0m
+Redirected to http://0.0.0.0:3000/pictures
+Completed in 86ms (DB: 0) | 302 Found [http://0.0.0.0/pictures/caption_vote/12?u=y]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:46:52) [GET]
+  [4;35;1mPicture Load (0.6ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.1ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (9.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (5.2ms)
+Rendered pictures/_picture (8.0ms)
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:52) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.3ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:46:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:47:57) [GET]
+  [4;36;1mPicture Load (0.7ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/pictures/_add_caption_form.html.erb:
+1: <div class="add_caption_form">
+2: 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
+3: 		<%= hidden_field_tag 'picture_id', @picture.id %>
+4: 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
+5: 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
+6: 		
+
+    app/views/pictures/_add_caption_form.html.erb:3
+    app/views/pictures/_add_caption_form.html.erb:2
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:48:34) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `picture' for #<ActionView::Base:0x1040dca00>) on line #3 of app/views/pictures/_add_caption_form.html.erb:
+1: <div class="add_caption_form">
+2: 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
+3: 		<%= hidden_field_tag 'picture_id', picture.id %>
+4: 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
+5: 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
+6: 		
+
+    app/views/pictures/_add_caption_form.html.erb:3
+    app/views/pictures/_add_caption_form.html.erb:2
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:49:06) [GET]
+  [4;36;1mPicture Load (0.7ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.3ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (29.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.7ms)
+  [4;36;1mCaption Load (0.3ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (7.7ms)
+Rendered pictures/_picture (13.0ms)
+Completed in 199ms (View: 88, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:49:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:49:06) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:49:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;35;1mCaption Load (0.3ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 84ms (View: 77, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:49:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.3ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:49:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.3ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.3ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:49:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:49:49) [GET]
+  [4;35;1mPicture Load (0.6ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+ERROR: compiling _run_erb_app47views47pictures47_picture46html46erb_locals_object_picture_picture_counter RAISED compile error
+/Users/Preston Air/work/captionize/app/views/pictures/_picture.html.erb:23: syntax error, unexpected ')', expecting tASSOC
+...> "add_caption_form", picture) ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47pictures47_picture46html46erb_locals_object_picture_picture_counter(local_assigns)
+            old_output_buffer = output_buffer;picture = local_assigns[:picture];picture_counter = local_assigns[:picture_counter];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"picture_box\">\n\n<div class=\"picture\">\n\t<table border=0>\n\t<tr>\n\t<td valign=top>\n\t"
+
+
+
+
+
+; @output_buffer.concat(( link_to image_tag(url_for(:action => 'picture', :id => picture.id), :width => 100, :height => 100, :style => 'vertical-align:text-top;'), :action => :show, :id => picture.id ).to_s); @output_buffer.concat "\n\n\t</td>\n\t<td valign=top>\n\t<span class=\"picture_main_headline\">\n\t\t"
+
+
+
+
+; @output_buffer.concat((h picture.headline ).to_s); @output_buffer.concat "\n\t</span>\n\t<br />\n\t<span class=\"picture_info\">\n\t\t<span class=\"picture_user\">\n\t\t\tShared by "
+
+
+
+
+; @output_buffer.concat((h picture.user.name ).to_s); @output_buffer.concat "\n\t\t</span>\n\t\t<span class=\"picture_detail_info\">\n\t\t\t"
+
+
+; @output_buffer.concat((h did_when(picture.created_at) ).to_s); @output_buffer.concat "\n\t\t</span>\n\t</span>\n\t"
+
+
+; @output_buffer.concat(( render(:partial => "add_caption_form", picture) ).to_s); @output_buffer.concat "\n\t<div id=\"caption_list\" class=\"caption_list\">\n\t\t"
+
+; @output_buffer.concat(( render(:partial => "caption", :collection => picture.captions) ).to_s); @output_buffer.concat "\n\t</div>\n\t</td>\n\t</tr>\n\t</table>\n</div>\n\n\n</div>\n\n"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Preston Air/work/captionize/app/views/pictures/_picture.html.erb:38:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:221:in `render_partial_collection'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:216:in `map'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:216:in `render_partial_collection'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:182:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/Users/Preston Air/work/captionize/app/views/pictures/index.html.erb:4:in `_run_erb_app47views47pictures47index46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/Preston Air/work/captionize/app/controllers/pictures_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Preston Air/work/captionize/app/views/pictures/_picture.html.erb:23: syntax error, unexpected ')', expecting tASSOC
+...> "add_caption_form", picture) ).to_s); @output_buffer.conca...
+                              ^) on line #23 of app/views/pictures/_picture.html.erb:
+20: 			<%=h did_when(picture.created_at) %>
+21: 		</span>
+22: 	</span>
+23: 	<%= render(:partial => "add_caption_form", picture) %>
+24: 	<div id="caption_list" class="caption_list">
+25: 		<%= render(:partial => "caption", :collection => picture.captions) %>
+26: 	</div>
+
+    app/views/pictures/_picture.html.erb:38:in `compile!'
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (103.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-30 20:55:46) [GET]
+
+ActionController::RoutingError (No route matches "/captionizer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:56:21) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/pictures/_add_caption_form.html.erb:
+1: <div class="add_caption_form">
+2: 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
+3: 		<%= hidden_field_tag 'picture_id', @picture.id %>
+4: 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
+5: 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
+6: 		
+
+    app/views/pictures/_add_caption_form.html.erb:3
+    app/views/pictures/_add_caption_form.html.erb:2
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (111.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:57:05) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `picture' for #<ActionView::Base:0x104296d78>) on line #3 of app/views/pictures/_add_caption_form.html.erb:
+1: <div class="add_caption_form">
+2: 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
+3: 		<%= hidden_field_tag 'picture_id', picture.id %>
+4: 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
+5: 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
+6: 		
+
+    app/views/pictures/_add_caption_form.html.erb:3
+    app/views/pictures/_add_caption_form.html.erb:2
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (145.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:58:32) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/pictures/_add_caption_form.html.erb:
+1: <div class="add_caption_form">
+2: 	<% form_remote_tag :url => { :action => 'add_caption', :name => 'add_caption' } do -%>
+3: 		<%= hidden_field_tag 'picture_id', picture.id %>
+4: 		<%= text_field_tag 'new_caption', nil, :size => 40, :maxlength => 40 %>
+5: 		<%= text_field_tag 'username', session[:username], :size => 20, :maxlength => 20 %>
+6: 		
+
+    app/views/pictures/_add_caption_form.html.erb:3
+    app/views/pictures/_add_caption_form.html.erb:2
+    app/views/pictures/_picture.html.erb:23
+    app/views/pictures/index.html.erb:4
+    app/controllers/pictures_controller.rb:7:in `index'
+
+Rendered rescues/_trace (110.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:59:36) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.8ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.7ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (63.5ms)
+Rendered pictures/_picture (67.0ms)
+Completed in 102ms (View: 96, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:37) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#show (for 127.0.0.1 at 2009-12-30 20:59:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Rendering template within layouts/pictures
+Rendering pictures/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.1ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Completed in 46ms (View: 39, DB: 1) | 200 OK [http://0.0.0.0/pictures/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 20:59:43) [GET]
+  [4;35;1mPicture Load (0.6ms)[0m   [0mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.0ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (67.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.6ms)
+  [4;35;1mCaption Load (0.2ms)[0m   [0mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mVote Load (0.3ms)[0m   [0mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (5.1ms)
+Rendered pictures/_picture (61.5ms)
+Completed in 135ms (View: 130, DB: 2) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]

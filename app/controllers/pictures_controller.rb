@@ -10,6 +10,14 @@ class PicturesController < ApplicationController
     end
   end
 
+  def picture
+    @picture = Picture.find(params[:id])
+    send_data(@picture.picture_data,
+              :filename => @picture.path_to_picture,
+              :type => @picture.content_type,
+              :disposition => "inline")
+  end
+  
   # GET /pictures/1
   # GET /pictures/1.xml
   def show
@@ -32,17 +40,26 @@ class PicturesController < ApplicationController
     #redirect_to :action => 'picture', :id => params[:picture_id]
     respond_to { |format| format.js }
   end
+  
+  def add_new_picture
+    @picture = Picture.create()
+  end
 
   def caption_vote
-    if ! session[:user_id]
-      set_session_user_id(1)
-    end
+    get_session_user_id
       
     vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
     vote.save
     redirect_to :action => 'index'
   end
 
+  def get_session_user_id
+    if ! session[:user_id]
+      set_session_user_id(1)
+    end
+    session[:user_id]
+  end
+  
   def set_session_user_id(new_id)
     session[:user_id] = new_id
     if "1" == session[:user_id] 
@@ -77,6 +94,7 @@ class PicturesController < ApplicationController
   # POST /pictures.xml
   def create
     @picture = Picture.new(params[:picture])
+    @picture.user_id = get_session_user_id
 
     respond_to do |format|
       if @picture.save
