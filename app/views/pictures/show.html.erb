@@ -22,7 +22,7 @@
 		</span>
 	</span>
 	<%= render(:partial => "add_caption_form", :locals => { :picture => @picture } ) %>
-	<div id="caption_list" class="caption_list">
+	<div class="caption_list" id="caption_list_<%= @picture.id %>">
 		<%= render(:partial => "caption", :collection => @picture.captions) %>
 	</div>
 	</td>

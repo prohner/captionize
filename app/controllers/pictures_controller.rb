@@ -30,7 +30,8 @@ class PicturesController < ApplicationController
   end
 
   def add_caption
-    @current_caption = Caption.create(:headline => params[:new_caption],
+    new_caption_id = "new_caption_%d" % params[:picture_id]
+    @current_caption = Caption.create(:headline => params[new_caption_id],
                                       :picture_id => params[:picture_id],
                                       :user_id => session[:user_id])
     @current_caption.save

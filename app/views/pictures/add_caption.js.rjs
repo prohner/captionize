@@ -1,7 +1,11 @@
-page[:new_caption].value = ""
+new_caption_id = "new_caption_%d" % @picture.id
+logger.error("RJS the value = %s" % new_caption_id)
+page[new_caption_id].value = ""
 #page[:add_caption].reset
 
-page.replace_html("caption_list", :partial => "caption", :collection => @captions)
+new_caption_list_id = "caption_list_%d" % @picture.id
+logger.error("RJS the value = %s" % new_caption_list_id)
+page.replace_html(new_caption_list_id, :partial => "caption", :collection => @captions)
 
 page[:current_caption].visual_effect :highlight,
                                      :startcolor => "#f0f000",
