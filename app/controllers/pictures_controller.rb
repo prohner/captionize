@@ -48,9 +48,10 @@ class PicturesController < ApplicationController
   def caption_vote
     get_session_user_id
       
-    vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
-    vote.save
-    redirect_to :action => 'index'
+    @vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
+    @vote.save
+    @caption = Caption.find(params[:id])
+    #redirect_to :action => 'index'
   end
 
   def get_session_user_id

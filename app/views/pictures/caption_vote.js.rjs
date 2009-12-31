@@ -1,0 +1,3 @@
+page.replace_html("up_vote_count_%d" % @caption.id, "(%d)" % @caption.count_of_up_votes)
+page.replace_html("down_vote_count_%d" % @caption.id, "(%d)" % @caption.count_of_down_votes)
+

@@ -13,15 +13,25 @@
 	<span class="caption_detail_info">
 		<%=h did_when(caption.created_at) %>
 	</span>
-	
-	<%= link_to image_tag("up.png"), :action => 'caption_vote', :id => caption.id, :u => 'y' %>
-	<span class="caption_vote_count">
+
+<table style="display:inline;">	
+<tr>
+<td>
+	<% form_remote_tag :url => { :action => 'caption_vote', :id => caption.id, :u => 'y' } do %>
+		<%= image_submit_tag "up.png" %>
+	<% end %>
+	<span class="caption_vote_count" id="up_vote_count_<%= caption.id %>">
 	(<%=h caption.count_of_up_votes %>)
 	</span>
-	
-	<%= link_to image_tag("down.png"), :action => 'caption_vote', :id => caption.id, :u => 'n' %>
-	<span class="caption_vote_count">
+</td>	
+<td>
+	<% form_remote_tag :url => { :action => 'caption_vote', :id => caption.id, :u => 'n' } do %>
+		<%= image_submit_tag "down.png" %>
+	<% end %>
+	<span class="caption_vote_count" id="down_vote_count_<%= caption.id %>">
 	(<%=h caption.count_of_down_votes %>)
 	</span>
-
+</td>
+</tr>
+</table>
 </div>
