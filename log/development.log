@@ -4551,3 +4551,35 @@ Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 20:59:43) [GE
   [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
 Sending data rails.png
 Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#index (for 127.0.0.1 at 2009-12-30 21:01:58) [GET]
+  [4;36;1mPicture Load (0.6ms)[0m   [0;1mSELECT * FROM "pictures" [0m
+Rendering template within layouts/pictures
+Rendering pictures/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (1.2ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 4) [0m
+Rendered pictures/_picture (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered pictures/_add_caption_form (0.6ms)
+  [4;36;1mCaption Load (0.2ms)[0m   [0;1mSELECT * FROM "captions" WHERE ("captions".picture_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mVote Load (0.3ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes".caption_id = 12) [0m
+Rendered pictures/_caption (5.1ms)
+Rendered pictures/_picture (8.5ms)
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/pictures]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 21:01:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPicture Load (0.2ms)[0m   [0mSELECT * FROM "pictures" WHERE ("pictures"."id" = 5) [0m
+Sending data rails.png
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/5]
+
+
+Processing PicturesController#picture (for 127.0.0.1 at 2009-12-30 21:01:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPicture Load (0.2ms)[0m   [0;1mSELECT * FROM "pictures" WHERE ("pictures"."id" = 4) [0m
+Sending data svn.jpg
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://0.0.0.0/pictures/picture/4]
