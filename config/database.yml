@@ -16,7 +16,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+   adapter: mysql
+   database: captionize
+   timeout: 5000
+   username: captionize_user
+   password: secretX
+   host: db_primary
+   encoding: utf8
