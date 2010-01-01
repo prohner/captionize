@@ -64,8 +64,13 @@ class PicturesController < ApplicationController
   
   def set_session_user_id(new_id)
     x = User.find(new_id)
+
+    if x.id == nil?    
+      session[:user_id] = new_id 
+    else
+      session[:user_id] = "1"
+    end
     
-    session[:user_id] = new_id if x.id == nil?
     if "1" == session[:user_id] 
       session[:username] = 'Preston'
     else
