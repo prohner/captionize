@@ -17,9 +17,10 @@
 <hr size=1>
 <%= link_to 'Main Page', :action => 'index' %>
 <hr size=1>
-<%= link_to 'Preston', :action => 'force_user_id', :id => 1 %>
+<% load_my_two_users %>
+<%= link_to 'Preston', :action => 'force_user_id', :id => @preston.id %>
 <br />
-<%= link_to 'Alexis', :action => 'force_user_id', :id => 2 %>
+<%= link_to 'Alexis', :action => 'force_user_id', :id => @alexis.id %>
 
 <br />
 <%= link_to 'Add', :action => 'add_picture' %>
