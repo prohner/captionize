@@ -7,6 +7,9 @@ class CreatePictures < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_column :pictures, :picture_data, :binary, :limit => 1.megabyte
+    add_column :pictures, :content_type, :string
   end
 
   def self.down
