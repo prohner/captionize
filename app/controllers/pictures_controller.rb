@@ -48,12 +48,12 @@ class PicturesController < ApplicationController
   end
 
   def caption_vote
-    logger.error('going')
     @vote = Vote.get_vote_for_user_and_caption(session[:user_id], params[:id])
     @vote.is_up = params[:u]
     @vote.save
     @caption = Caption.find(params[:id])
     #redirect_to :action => 'index'
+    respond_to { |format| format.js }
   end
 
   def force_user_id

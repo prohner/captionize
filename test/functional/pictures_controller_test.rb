@@ -46,7 +46,16 @@ class PicturesControllerTest < ActionController::TestCase
   test "should add new caption" do
     assert_difference('Caption.count', 1) do
       caption_id = "new_caption_%d" % pictures(:picture1).id
-      get :add_caption, caption_id => 'Hi, new caption', :picture_id => pictures(:picture1).id
+      get :add_caption, caption_id => 'Hi, new caption', :picture_id => pictures(:picture1).to_param
+    end
+    assert_response :success
+  end
+  
+  test "should add vote" do
+    Vote.delete_all
+    assert_difference('Vote.count', 1) do
+      
+      get :caption_vote, :id => captions(:caption_pic1_1).to_param, :u => 'y'
     end
     assert_response :success
   end
