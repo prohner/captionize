@@ -2,6 +2,8 @@ class Caption < ActiveRecord::Base
   belongs_to :picture
   belongs_to :user
   has_many :votes
+  
+  validates_presence_of :headline, :user_id, :picture_id
 
   def count_of_votes_by_type(t)
     vote_count = 0

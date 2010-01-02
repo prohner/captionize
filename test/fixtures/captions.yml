@@ -1,11 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  headline: MyString
+caption_pic1_1:
+  id: 1
+  headline: Funny caption
   user_id: 1
   picture_id: 1
 
-two:
-  headline: MyString
+caption_pic1_2:
+  id: 2
+  headline: Funnier caption
   user_id: 1
+  picture_id: 1
+
+caption_pic1_3:
+  id: 3
+  headline: Funniest caption
+  user_id: 2
   picture_id: 1

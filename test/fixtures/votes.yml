@@ -1,11 +1,26 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  is_up: MyString
+caption1_1_upvote:
+  is_up: y
   user_id: 1
   caption_id: 1
 
-two:
-  is_up: MyString
-  user_id: 1
+caption1_2_upvote:
+  is_up: y
+  user_id: 2
+  caption_id: 1
+
+caption1_3_downvote:
+  is_up: n
+  user_id: 3
+  caption_id: 1
+
+caption1_4_downvote:
+  is_up: n
+  user_id: 4
+  caption_id: 1
+
+caption1_5_downvote:
+  is_up: n
+  user_id: 5
   caption_id: 1
