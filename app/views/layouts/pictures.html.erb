@@ -17,13 +17,7 @@
 <hr size=1>
 <%= link_to 'Main Page', :action => 'index' %>
 <hr size=1>
-<% load_my_two_users %>
-<%= link_to 'Preston', :action => 'force_user_id', :id => @preston.id %>
-<br />
-<%= link_to 'Alexis', :action => 'force_user_id', :id => @alexis.id %>
 
-<br />
-<%= link_to 'Add', :action => 'add_picture' %>
-
+<br />I am <b><%= session[:username] %></b> (<%= session[:user_id] %>)
 </body>
 </html>

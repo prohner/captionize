@@ -56,11 +56,6 @@ class PicturesController < ApplicationController
     respond_to { |format| format.js }
   end
 
-  def force_user_id
-    set_session_user_id(params[:id])
-    redirect_to :action => 'index'
-  end
-
   # GET /pictures/new
   # GET /pictures/new.xml
   def new
@@ -126,26 +121,25 @@ class PicturesController < ApplicationController
 
 private
   def get_session_user_id
-    if ! session[:user_id]
-      set_session_user_id(1)
+    logger.error("get_session_user_id 1 (#{session[:user_id]})")
+
+    #session[:username] = User.find(8).name
+    if session[:user_id] == nil || !User.exists?(session[:user_id])
+      if params[:username] && !User.exists?(["name = ?", params[:username]])
+        logger.error("get_session_user_id 2")
+        new_user = User.new(:name => params[:username], :email => 'whatever@wherever.com')
+      else
+        logger.error("get_session_user_id 3")
+        new_user = User.find_by_name(:name => "Billy Bob", :email => 'billy@bob.com')
+      end
+      logger.error("get_session_user_id 4")
+      new_user.save
+      logger.error("My new user id is #{new_user.id}")
+      session[:user_id] = new_user.id
+      session[:username] = new_user.name
     end
+    
     session[:user_id]
-  end
-
-  def set_session_user_id(new_id)
-    x = User.find(new_id)
-
-    if x.id == nil?    
-      session[:user_id] = new_id 
-    else
-      session[:user_id] = "1"
-    end
-  
-    if "1" == session[:user_id] 
-      session[:username] = 'Preston'
-    else
-      session[:username] = 'Alexis'
-    end  
   end
 
 end
