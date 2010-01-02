@@ -1,7 +1,7 @@
 # This is a sample Capistrano config file for EC2 on Rails.
 # It should be edited and customized.
 
-my_own_hostname = "ec2-72-44-50-135.compute-1.amazonaws.com"
+my_own_hostname = "ec2-204-236-243-178.compute-1.amazonaws.com"
 
 set :application, "depot"
 set :domain, my_own_hostname
