@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+    before_filter :get_session_user_id
   # GET /pictures
   # GET /pictures.xml
   def index
@@ -47,8 +48,6 @@ class PicturesController < ApplicationController
   end
 
   def caption_vote
-    get_session_user_id
-    
     logger.error('going')
     @vote = Vote.find(:first, :conditions => ["votes.user_id = ? and votes.caption_id = ?", session[:user_id], params[:id]])
     if @vote.nil?
@@ -64,29 +63,6 @@ class PicturesController < ApplicationController
     #redirect_to :action => 'index'
   end
 
-  def get_session_user_id
-    if ! session[:user_id]
-      set_session_user_id(1)
-    end
-    session[:user_id]
-  end
-  
-  def set_session_user_id(new_id)
-    x = User.find(new_id)
-
-    if x.id == nil?    
-      session[:user_id] = new_id 
-    else
-      session[:user_id] = "1"
-    end
-    
-    if "1" == session[:user_id] 
-      session[:username] = 'Preston'
-    else
-      session[:username] = 'Alexis'
-    end
-  end
-  
   def force_user_id
     set_session_user_id(params[:id])
     redirect_to :action => 'index'
@@ -112,7 +88,7 @@ class PicturesController < ApplicationController
   # POST /pictures.xml
   def create
     @picture = Picture.new(params[:picture])
-    @picture.user_id = get_session_user_id
+    @picture.user_id = session[:user_id]
 
     respond_to do |format|
       if @picture.save
@@ -154,4 +130,29 @@ class PicturesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+private
+  def get_session_user_id
+    if ! session[:user_id]
+      set_session_user_id(1)
+    end
+    session[:user_id]
+  end
+
+  def set_session_user_id(new_id)
+    x = User.find(new_id)
+
+    if x.id == nil?    
+      session[:user_id] = new_id 
+    else
+      session[:user_id] = "1"
+    end
+  
+    if "1" == session[:user_id] 
+      session[:username] = 'Preston'
+    else
+      session[:username] = 'Alexis'
+    end  
+  end
+
 end
