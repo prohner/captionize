@@ -1,6 +1,5 @@
 class CreatePictures < ActiveRecord::Migration
   def self.up
-    drop_table :pictures
     create_table :pictures do |t|
       t.string :headline
       t.string :path_to_picture
