@@ -48,9 +48,18 @@ class PicturesController < ApplicationController
 
   def caption_vote
     get_session_user_id
-      
-    @vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
-    @vote.save
+    
+    logger.error('going')
+    @vote = Vote.find(:first, :conditions => ["votes.user_id = ? and votes.caption_id = ?", session[:user_id], params[:id]])
+    if @vote.nil?
+      logger.error('creating new vote')
+      @vote = Vote.create(:user_id => session[:user_id], :caption_id => params[:id], :is_up => params[:u])
+    else
+      logger.error('updating vote')
+      @vote.is_up = params[:u]
+      @vote.save
+    end
+    logger.error('gone')
     @caption = Caption.find(params[:id])
     #redirect_to :action => 'index'
   end
