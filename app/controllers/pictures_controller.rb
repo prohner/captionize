@@ -134,7 +134,7 @@ private
         if !User.exists?(["name = ?", "Billy Bob"])
           new_user = User.new(:name => "Billy Bob", :email => 'billy@bob.com')
         else
-          new_user = User.find_by_name(:name => "Billy Bob", :email => 'billy@bob.com')
+          new_user = User.find(:first, :conditions => [ "name = ?", "Billy Bob" ])
         end
       end
       logger.error("get_session_user_id 4")
