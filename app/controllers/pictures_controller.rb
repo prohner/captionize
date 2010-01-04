@@ -32,6 +32,7 @@ class PicturesController < ApplicationController
 
   def add_caption
     new_caption_id = "new_caption_%d" % params[:picture_id]
+    logger.error("my new headline is (#{params[new_caption_id]})")
     @current_caption = Caption.create(:headline => params[new_caption_id],
                                       :picture_id => params[:picture_id],
                                       :user_id => session[:user_id])
@@ -130,7 +131,11 @@ private
         new_user = User.new(:name => params[:username], :email => 'whatever@wherever.com')
       else
         logger.error("get_session_user_id 3")
-        new_user = User.find_by_name(:name => "Billy Bob", :email => 'billy@bob.com')
+        if !User.exists?(["name = ?", "Billy Bob"])
+          new_user = User.new(:name => "Billy Bob", :email => 'billy@bob.com')
+        else
+          new_user = User.find_by_name(:name => "Billy Bob", :email => 'billy@bob.com')
+        end
       end
       logger.error("get_session_user_id 4")
       new_user.save

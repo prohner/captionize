@@ -1,10 +1,16 @@
 new_caption_id = "new_caption_%d" % @picture.id
-page[new_caption_id].value = ""
-#page[:add_caption].reset
 
-new_caption_list_id = "caption_list_%d" % @picture.id
-page.replace_html(new_caption_list_id, :partial => "caption", :collection => @captions)
+if @current_caption.valid?
+  page[new_caption_id].value = ""
 
-page[:current_caption].visual_effect :highlight,
-                                     :startcolor => "#f0f000",
-                                     :endcolor => "#f7f7f7"
+  new_caption_list_id = "caption_list_%d" % @picture.id
+  page.replace_html(new_caption_list_id, :partial => "caption", :collection => @captions)
+
+  page[:current_caption].visual_effect :highlight,
+                                       :startcolor => "#f0f000",
+                                       :endcolor => "#f7f7f7"
+else
+  page.visual_effect :shake, new_caption_id, :duration => 2.0
+end
+
+

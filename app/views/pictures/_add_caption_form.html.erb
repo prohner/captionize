@@ -6,4 +6,15 @@
 		
 		<%= submit_tag 'Suggest' %>
 	<% end -%>
+
+<script type="text/javascript">
+function caption_must_be_present() {
+	alert('hi');
+	var title = document.getElementById("item_title").value
+	if (title.length == 0 ) {
+		alert("Item Title cannot be empty");
+		return false;
+	}
+}
+</script>
 </div>	

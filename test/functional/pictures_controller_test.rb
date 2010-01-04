@@ -51,6 +51,13 @@ class PicturesControllerTest < ActionController::TestCase
     assert_response :success
   end
   
+  test "should fail to create empty caption" do
+    assert_difference('Caption.count', 0) do
+      caption_id = "new_caption_%d" % pictures(:picture1).id
+      get :add_caption, caption_id => nil, :picture_id => pictures(:picture1).to_param
+    end
+  end
+  
   test "should add vote" do
     Vote.delete_all
     assert_difference('Vote.count', 1) do

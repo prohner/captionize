@@ -4,6 +4,7 @@ class Caption < ActiveRecord::Base
   has_many :votes
   
   validates_presence_of :headline, :user_id, :picture_id
+  validates_length_of :headline, :minimum => 2
 
   def count_of_votes_by_type(t)
     vote_count = 0
